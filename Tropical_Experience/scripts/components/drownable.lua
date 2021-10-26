@@ -137,6 +137,7 @@ function Drownable:OnFallInOcean(shore_x, shore_y, shore_z)
 end
 
 function Drownable:TakeDrowningDamage()
+if EQUIPSLOTS == nil or EQUIPSLOTS.BODY == nil then return end
 local lifejacket = self.inst.components.inventory:GetEquippedItem(EQUIPSLOTS.BODY)
 if lifejacket and lifejacket.prefab == "armor_lifejacket" then lifejacket:Remove() return end
 
