@@ -11,9 +11,11 @@ dont_starve_compatible = false
 all_clients_require_mod = true
 client_only_mod = false
 reign_of_giants_compatible = false
-server_filter_tags = {"shipwrecked", "tropical experience", "Hamlet", "Economy", "itens", "biome", "world", "gen",
-                      "money", "coins", "house", "home", "boats", "light", "hats", "boss", "companion", "endless",
-                      "ruins", "gun", "hard", "trade", "vagner"}
+server_filter_tags = {
+    "shipwrecked", "tropical experience", "Hamlet", "Economy", "itens", "biome", "world", "gen",
+    "money", "coins", "house", "home", "boats", "light", "hats", "boss", "companion", "endless",
+    "ruins", "gun", "hard", "trade", "vagner"
+}
 
 icon_atlas = "modicon.xml"
 icon = "modicon.tex"

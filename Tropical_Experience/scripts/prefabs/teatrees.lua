@@ -1,15 +1,12 @@
-local assets =
-{
-    Asset("ANIM", "anim/tree_leaf_short.zip"),
+local assets = {
+    Asset("ANIM", "anim/tree_leaf_short.zip"), 
     Asset("ANIM", "anim/tree_leaf_normal.zip"),
-    Asset("ANIM", "anim/tree_leaf_tall.zip"),
-
-    Asset("ANIM", "anim/teatree_trunk_build.zip"), --trunk build (winter leaves build)
+    Asset("ANIM", "anim/tree_leaf_tall.zip"), 
+    Asset("ANIM", "anim/teatree_trunk_build.zip"), -- trunk build (winter leaves build)
     Asset("ANIM", "anim/teatree_build.zip"), 
-
     Asset("ANIM", "anim/dust_fx.zip"),
-    Asset("SOUND", "sound/forest.fsb"),
-    Asset("MINIMAP_IMAGE", "teatree"),
+    Asset("SOUND", "sound/forest.fsb"), 
+    Asset("MINIMAP_IMAGE", "teatree")
 }
 
 local MIN_LEAF_CHANGE_TIME = .1 * 300
@@ -18,7 +15,7 @@ local MIN_SWAY_FX_FREQUENCY = 1 * 30
 local MAX_SWAY_FX_FREQUENCY = 2 * 30
 local SWAY_FX_FREQUENCY = 1 * 3
 local DECID_MONSTER_MIN_DAY = 3
-local DECID_MONSTER_DAY_THRESHOLDS = { 20, 35, 70 }
+local DECID_MONSTER_DAY_THRESHOLDS = {20, 35, 70}
 local DECID_MONSTER_SPAWN_CHANCE_BASE = .033
 local DECID_MONSTER_SPAWN_CHANCE_LOW = .08
 local DECID_MONSTER_SPAWN_CHANCE_MED = .15
@@ -29,15 +26,25 @@ local DECID_MONSTER_ATTACK_PERIOD = 2.3
 local DECID_MONSTER_ROOT_ATTACK_RADIUS = 3.7
 local DECID_MONSTER_DAMAGE = 30
 local DECID_MONSTER_ADDITIONAL_LOOT_CHANCE = .2
-local DECID_MONSTER_DURATION = 480*.5
+local DECID_MONSTER_DURATION = 480 * .5
 local day_time = 300
-local DECIDUOUS_GROW_TIME =
-	    {
-	        {base=1.5*day_time, random=0.5*day_time},   --short
-	        {base=5*day_time, random=2*day_time},   --normal
-	        {base=5*day_time, random=2*day_time},   --tall
-	        {base=1*day_time, random=0.5*day_time}   --old
-	    }
+local DECIDUOUS_GROW_TIME = {{
+    base = 1.5 * day_time,
+    random = 0.5 * day_time
+}, -- short
+{
+    base = 5 * day_time,
+    random = 2 * day_time
+}, -- normal
+{
+    base = 5 * day_time,
+    random = 2 * day_time
+}, -- tall
+{
+    base = 1 * day_time,
+    random = 0.5 * day_time
+} -- old
+}
 
 local DECIDUOUS_CHOPS_SMALL = 5
 local DECIDUOUS_CHOPS_NORMAL = 10
@@ -46,57 +53,47 @@ local DECIDUOUS_CHOPS_MONSTER = 12
 local DECIDUOUS_WINDBLOWN_SPEED = 0.2
 local DECIDUOUS_WINDBLOWN_FALL_CHANCE = 0.01
 
-local prefabs =
-{
-    "log",
-    "twigs",
-    "teatree_nut",
-    "charcoal",
-    "green_leaves",
-    "green_leaves_chop",
-    "spoiled_food",
-}
+local prefabs = {"log", "twigs", "teatree_nut", "charcoal", "green_leaves", "green_leaves_chop", "spoiled_food"}
 
-local builds =
-{
-	normal = { --Green
-		leavesbuild="teatree_build",
-		prefab_name="teatree",
-		normal_loot = {"log", "twigs","teatree_nut"},
-		short_loot = {"log"},
-		tall_loot = {"log", "log", "twigs", "teatree_nut","teatree_nut"},
-		drop_nut=true,
-        fx="green_leaves",
-        chopfx="green_leaves_chop",
-        shelter=true,
-    },
+local builds = {
+    normal = { -- Green
+        leavesbuild = "teatree_build",
+        prefab_name = "teatree",
+        normal_loot = {"log", "twigs", "teatree_nut"},
+        short_loot = {"log"},
+        tall_loot = {"log", "log", "twigs", "teatree_nut", "teatree_nut"},
+        drop_nut = true,
+        fx = "green_leaves",
+        chopfx = "green_leaves_chop",
+        shelter = true
+    }
 }
 
 local function makeanims(stage)
-   
+
     return {
-        idle="idle_"..stage,
-        sway1="sway1_loop_"..stage,
-        sway2="sway2_loop_"..stage,
-        swayaggropre="sway_agro_pre",
-        swayaggro="sway_loop_agro",
-        swayaggropst="sway_agro_pst",
-        swayaggroloop="idle_loop_agro",
-        swayfx="swayfx_"..stage,
-        chop="chop_"..stage,
-        fallleft="fallleft_"..stage,
-        fallright="fallright_"..stage,
-        stump="stump_"..stage,
-        burning="burning_loop_"..stage,
-        burnt="burnt_"..stage,
-        chop_burnt="chop_burnt_"..stage,
-        idle_chop_burnt="idle_chop_burnt_"..stage,
-        dropleaves = "drop_leaves_"..stage,
-        growleaves = "grow_leaves_"..stage,
-        blown1="blown_loop_"..stage.."1",
-        blown2="blown_loop_"..stage.."2",
-        blown_pre="blown_pre_"..stage,
-        blown_pst="blown_pst_"..stage
+        idle = "idle_" .. stage,
+        sway1 = "sway1_loop_" .. stage,
+        sway2 = "sway2_loop_" .. stage,
+        swayaggropre = "sway_agro_pre",
+        swayaggro = "sway_loop_agro",
+        swayaggropst = "sway_agro_pst",
+        swayaggroloop = "idle_loop_agro",
+        swayfx = "swayfx_" .. stage,
+        chop = "chop_" .. stage,
+        fallleft = "fallleft_" .. stage,
+        fallright = "fallright_" .. stage,
+        stump = "stump_" .. stage,
+        burning = "burning_loop_" .. stage,
+        burnt = "burnt_" .. stage,
+        chop_burnt = "chop_burnt_" .. stage,
+        idle_chop_burnt = "idle_chop_burnt_" .. stage,
+        dropleaves = "drop_leaves_" .. stage,
+        growleaves = "grow_leaves_" .. stage,
+        blown1 = "blown_loop_" .. stage .. "1",
+        blown2 = "blown_loop_" .. stage .. "2",
+        blown_pre = "blown_pre_" .. stage,
+        blown_pst = "blown_pst_" .. stage
     }
 
 end
@@ -106,11 +103,11 @@ local tall_anims = makeanims("tall")
 local normal_anims = makeanims("normal")
 
 local function GetBuild(inst)
-	local build = builds[inst.build]
-	if build == nil then
-		return builds["normal"]
-	end
-	return build
+    local build = builds[inst.build]
+    if build == nil then
+        return builds["normal"]
+    end
+    return build
 end
 
 local function SpawnLeafFX(inst, waittime, chop)
@@ -118,27 +115,35 @@ local function SpawnLeafFX(inst, waittime, chop)
         return
     end
     if waittime then
-        inst:DoTaskInTime(waittime, function(inst, chop) SpawnLeafFX(inst, nil, chop) end)
+        inst:DoTaskInTime(waittime, function(inst, chop)
+            SpawnLeafFX(inst, nil, chop)
+        end)
         return
     end
 
     local fx = nil
     if chop then
-        if GetBuild(inst).chopfx then fx = SpawnPrefab(GetBuild(inst).chopfx) end
+        if GetBuild(inst).chopfx then
+            fx = SpawnPrefab(GetBuild(inst).chopfx)
+        end
     else
-        if GetBuild(inst).fx then fx = SpawnPrefab(GetBuild(inst).fx) end
+        if GetBuild(inst).fx then
+            fx = SpawnPrefab(GetBuild(inst).fx)
+        end
     end
     if fx then
-        local x, y, z= inst.Transform:GetWorldPosition()
+        local x, y, z = inst.Transform:GetWorldPosition()
         if inst.components.growable and inst.components.growable.stage == 1 then
-            y = y + 0 --Short FX height
+            y = y + 0 -- Short FX height
         elseif inst.components.growable and inst.components.growable.stage == 2 then
-            y = y - .3 --Normal FX height
+            y = y - .3 -- Normal FX height
         elseif inst.components.growable and inst.components.growable.stage == 3 then
-            y = y + 0 --Tall FX height
+            y = y + 0 -- Tall FX height
         end
-        if chop then y = y + (math.random()*2) end --Randomize height a bit for chop FX
-        fx.Transform:SetPosition(x,y,z)
+        if chop then
+            y = y + (math.random() * 2)
+        end -- Randomize height a bit for chop FX
+        fx.Transform:SetPosition(x, y, z)
     end
 end
 
@@ -154,8 +159,10 @@ end
 
 local function Sway(inst, monster, monsterpost)
 
-    if inst.sg:HasStateTag("burning") or inst:HasTag("stump") then return end
-   
+    if inst.sg:HasStateTag("burning") or inst:HasTag("stump") then
+        return
+    end
+
     if math.random() > .5 then
         inst.AnimState:PlayAnimation(inst.anims.sway1, true)
     else
@@ -172,7 +179,9 @@ local function GrowLeavesFn(inst, monster, monsterout)
 
     if inst.leaf_state == "barren" or inst.target_leaf_state == "barren" then
         inst:RemoveEventCallback("animover", GrowLeavesFn)
-        if inst.target_leaf_state == "barren" then inst.build = "barren" end
+        if inst.target_leaf_state == "barren" then
+            inst.build = "barren"
+        end
     end
 
     if GetBuild(inst).leavesbuild then
@@ -201,7 +210,9 @@ local function GrowLeavesFn(inst, monster, monsterout)
         inst.AnimState:Show("mouseover")
     end
 
-    if not monster and not monsterout then Sway(inst) end
+    if not monster and not monsterout then
+        Sway(inst)
+    end
 end
 
 local function OnChangeLeaves(inst, monster, monsterout)
@@ -210,7 +221,8 @@ local function OnChangeLeaves(inst, monster, monsterout)
         inst.leaveschangetask = nil
         return
     end
-    if not monster and inst.components.workable and inst.components.workable.lastworktime and inst.components.workable.lastworktime < GetTime() - 10 then
+    if not monster and inst.components.workable and inst.components.workable.lastworktime and
+        inst.components.workable.lastworktime < GetTime() - 10 then
         inst.targetleaveschangetime = GetTime() + 11
         inst.leaveschangetask = inst:DoTaskInTime(11, OnChangeLeaves)
         return
@@ -252,14 +264,18 @@ local function OnChangeLeaves(inst, monster, monsterout)
         end
     else
         inst.AnimState:PlayAnimation(inst.anims.dropleaves)
-        SpawnLeafFX(inst, 11*FRAMES)
+        SpawnLeafFX(inst, 11 * FRAMES)
         inst.SoundEmitter:PlaySound("dontstarve/forest/treeWilt")
         inst:ListenForEvent("animover", GrowLeavesFn)
     end
     if GetBuild(inst).shelter then
-        if not inst:HasTag("shelter") then inst:AddTag("shelter") end
+        if not inst:HasTag("shelter") then
+            inst:AddTag("shelter")
+        end
     else
-        while inst:HasTag("shelter") do inst:RemoveTag("shelter") end
+        while inst:HasTag("shelter") do
+            inst:RemoveTag("shelter")
+        end
     end
 end
 --[[
@@ -302,8 +318,8 @@ local function SetShort(inst)
     if not inst.monster then
         inst.anims = short_anims
         if inst.components.workable then
-	       inst.components.workable:SetWorkLeft(DECIDUOUS_CHOPS_SMALL)
-	    end
+            inst.components.workable:SetWorkLeft(DECIDUOUS_CHOPS_SMALL)
+        end
         inst.components.lootdropper:SetLoot(GetBuild(inst).short_loot)
     end
 end
@@ -311,7 +327,9 @@ end
 local function GrowShort(inst)
     if not inst.monster then
         inst.AnimState:PlayAnimation("grow_tall_to_short")
-        if inst.leaf_state == "colorful" then SpawnLeafFX(inst, 17*FRAMES) end
+        if inst.leaf_state == "colorful" then
+            SpawnLeafFX(inst, 17 * FRAMES)
+        end
         inst:ListenForEvent("animover", ChangeSizeFn)
         inst.SoundEmitter:PlaySound("dontstarve/forest/treeGrow")
     end
@@ -320,14 +338,16 @@ end
 local function SetNormal(inst)
     inst.anims = normal_anims
     if inst.components.workable then
-	    inst.components.workable:SetWorkLeft(DECIDUOUS_CHOPS_NORMAL)
-	end
+        inst.components.workable:SetWorkLeft(DECIDUOUS_CHOPS_NORMAL)
+    end
     inst.components.lootdropper:SetLoot(GetBuild(inst).normal_loot)
 end
 
 local function GrowNormal(inst)
     inst.AnimState:PlayAnimation("grow_short_to_normal")
-    if inst.leaf_state == "colorful" then SpawnLeafFX(inst, 10*FRAMES) end
+    if inst.leaf_state == "colorful" then
+        SpawnLeafFX(inst, 10 * FRAMES)
+    end
     inst:ListenForEvent("animover", ChangeSizeFn)
     inst.SoundEmitter:PlaySound("dontstarve/forest/treeGrow")
 end
@@ -335,24 +355,54 @@ end
 local function SetTall(inst)
     inst.anims = tall_anims
     if inst.components.workable then
-		inst.components.workable:SetWorkLeft(DECIDUOUS_CHOPS_TALL)
-	end
+        inst.components.workable:SetWorkLeft(DECIDUOUS_CHOPS_TALL)
+    end
     inst.components.lootdropper:SetLoot(GetBuild(inst).tall_loot)
 end
 
 local function GrowTall(inst)
     inst.AnimState:PlayAnimation("grow_normal_to_tall")
-    if inst.leaf_state == "colorful" then SpawnLeafFX(inst, 10*FRAMES) end
+    if inst.leaf_state == "colorful" then
+        SpawnLeafFX(inst, 10 * FRAMES)
+    end
     inst:ListenForEvent("animover", ChangeSizeFn)
     inst.SoundEmitter:PlaySound("dontstarve/forest/treeGrow")
 end
 
-local growth_stages =
-{
-    {name="short", time = function(inst) return GetRandomWithVariance(DECIDUOUS_GROW_TIME[1].base, DECIDUOUS_GROW_TIME[1].random) end, fn = function(inst) SetShort(inst) end,  growfn = function(inst) GrowShort(inst) end},
-    {name="normal", time = function(inst) return GetRandomWithVariance(DECIDUOUS_GROW_TIME[2].base, DECIDUOUS_GROW_TIME[2].random) end, fn = function(inst) SetNormal(inst) end, growfn = function(inst) GrowNormal(inst) end},
-    {name="tall", time = function(inst) return GetRandomWithVariance(DECIDUOUS_GROW_TIME[3].base, DECIDUOUS_GROW_TIME[3].random) end, fn = function(inst) SetTall(inst) end, growfn = function(inst) GrowTall(inst) end},    
-}
+local growth_stages = {{
+    name = "short",
+    time = function(inst)
+        return GetRandomWithVariance(DECIDUOUS_GROW_TIME[1].base, DECIDUOUS_GROW_TIME[1].random)
+    end,
+    fn = function(inst)
+        SetShort(inst)
+    end,
+    growfn = function(inst)
+        GrowShort(inst)
+    end
+}, {
+    name = "normal",
+    time = function(inst)
+        return GetRandomWithVariance(DECIDUOUS_GROW_TIME[2].base, DECIDUOUS_GROW_TIME[2].random)
+    end,
+    fn = function(inst)
+        SetNormal(inst)
+    end,
+    growfn = function(inst)
+        GrowNormal(inst)
+    end
+}, {
+    name = "tall",
+    time = function(inst)
+        return GetRandomWithVariance(DECIDUOUS_GROW_TIME[3].base, DECIDUOUS_GROW_TIME[3].random)
+    end,
+    fn = function(inst)
+        SetTall(inst)
+    end,
+    growfn = function(inst)
+        GrowTall(inst)
+    end
+}}
 
 local function detachchild(inst)
     if inst.components.spawner and inst.components.spawner.child then
@@ -360,18 +410,18 @@ local function detachchild(inst)
         if child.components.knownlocations then
             print("CLEARIGN HOME")
             child.components.knownlocations:ForgetLocation("home")
-        end        
+        end
         child:RemoveComponent("homeseeker")
     end
 end
 
 local function chop_tree(inst, chopper, chops)
 
-	if chopper and chopper.components.beaverness and chopper.isbeavermode and chopper.isbeavermode:value() then
-		inst.SoundEmitter:PlaySound("dontstarve/characters/woodie/beaver_chop_tree")
-	else
-		inst.SoundEmitter:PlaySound("dontstarve/wilson/use_axe_tree")
-	end
+    if chopper and chopper.components.beaverness and chopper.isbeavermode and chopper.isbeavermode:value() then
+        inst.SoundEmitter:PlaySound("dontstarve/characters/woodie/beaver_chop_tree")
+    else
+        inst.SoundEmitter:PlaySound("dontstarve/wilson/use_axe_tree")
+    end
 
     SpawnLeafFX(inst, nil, true)
 
@@ -395,10 +445,10 @@ local function dig_up_stump(inst, chopper)
     else
         inst.components.lootdropper:SpawnLootPrefab("log")
     end
-	if inst.components.mystery and inst.components.mystery.investigated then
-		inst.components.lootdropper:SpawnLootPrefab(inst.components.mystery.reward)
-	end	
-    inst:Remove()	
+    if inst.components.mystery and inst.components.mystery.investigated then
+        inst.components.lootdropper:SpawnLootPrefab(inst.components.mystery.reward)
+    end
+    inst:Remove()
 end
 
 local function chop_down_tree(inst, chopper)
@@ -425,15 +475,15 @@ local function chop_down_tree(inst, chopper)
     inst.components.inventory:DropEverything(false, false)
 
     if inst.components.spawner and inst.components.spawner:IsOccupied() then
-        inst.components.spawner:ReleaseChild()                            
+        inst.components.spawner:ReleaseChild()
     end
     detachchild(inst)
 
-	local px, py, pz = inst.Transform:GetWorldPosition()	
-	local novacasa = SpawnPrefab("teatree_stump")
-	novacasa.Transform:SetPosition(px, py, pz)	
-	inst:Remove()
-end	
+    local px, py, pz = inst.Transform:GetWorldPosition()
+    local novacasa = SpawnPrefab("teatree_stump")
+    novacasa.Transform:SetPosition(px, py, pz)
+    inst:Remove()
+end
 
 local function chop_down_burnt_tree(inst, chopper)
     inst:RemoveComponent("workable")
@@ -441,7 +491,9 @@ local function chop_down_burnt_tree(inst, chopper)
     inst.SoundEmitter:PlaySound("dontstarve/wilson/use_axe_tree")
     inst.AnimState:PlayAnimation(inst.anims.chop_burnt)
     RemovePhysicsColliders(inst)
-    inst:ListenForEvent("animover", function() inst:Remove() end)
+    inst:ListenForEvent("animover", function()
+        inst:Remove()
+    end)
     inst.components.inventory:DropEverything(false, false)
     inst.components.lootdropper:SpawnLootPrefab("charcoal")
     inst.components.lootdropper:DropLoot()
@@ -451,22 +503,24 @@ local function chop_down_burnt_tree(inst, chopper)
     end
 end
 
-function GetItems(criteriaFn,inst)
+function GetItems(criteriaFn, inst)
     local items = {}
     if criteriaFn and inst.components.inventory and inst.components.inventory.itemslots then
-        for k,v in pairs(inst.components.inventory.itemslots) do
+        for k, v in pairs(inst.components.inventory.itemslots) do
             if criteriaFn(k, v) then
                 table.insert(items, v)
             end
         end
     end
-    
+
     return items
 end
 
 local function BurnInventoryItems(inst)
     if inst.components.inventory then
-        local burnableItems = GetItems(function(k,v) return v.components.burnable end, inst)
+        local burnableItems = GetItems(function(k, v)
+            return v.components.burnable
+        end, inst)
         for index, burnableItem in ipairs(burnableItems) do
             burnableItem.components.burnable:Ignite(true)
         end
@@ -475,10 +529,14 @@ end
 
 local function onburntchanges(inst)
     inst:RemoveComponent("growable")
---    inst:RemoveComponent("blowinwindgust")
-    while inst:HasTag("shelter") do inst:RemoveTag("shelter") end
-    while inst:HasTag("cattoyairborne") do inst:RemoveTag("cattoyairborne") end
---    inst:RemoveTag("dragonflybait")
+    --    inst:RemoveComponent("blowinwindgust")
+    while inst:HasTag("shelter") do
+        inst:RemoveTag("shelter")
+    end
+    while inst:HasTag("cattoyairborne") do
+        inst:RemoveTag("cattoyairborne")
+    end
+    --    inst:RemoveTag("dragonflybait")
     inst:RemoveTag("fire")
     inst:RemoveTag("monster")
     inst.monster = false
@@ -507,13 +565,13 @@ local function onburntchanges(inst)
         inst.leaveschangetask:Cancel()
         inst.leaveschangetask = nil
     end
-        
+
     detachchild(inst)
 
     inst:RemoveComponent("spawner")
 
     inst.AnimState:PlayAnimation(inst.anims.burnt, true)
-    inst:DoTaskInTime(3*FRAMES, function(inst)
+    inst:DoTaskInTime(3 * FRAMES, function(inst)
         if inst.components.burnable and inst.components.propagator then
             inst.components.burnable:Extinguish()
             inst.components.propagator:StopSpreading()
@@ -532,25 +590,29 @@ local function OnBurnt(inst, imm)
                 inst.components.deciduoustreeupdater:StopMonster()
                 inst:RemoveComponent("deciduoustreeupdater")
             end
-            if inst.components.combat then inst:RemoveComponent("combat") end
+            if inst.components.combat then
+                inst:RemoveComponent("combat")
+            end
             inst.sg:GoToState("empty")
             inst.AnimState:SetBank("tree_leaf")
-            inst:DoTaskInTime(1*FRAMES, onburntchanges)
+            inst:DoTaskInTime(1 * FRAMES, onburntchanges)
         else
             onburntchanges(inst)
         end
     else
-        inst:DoTaskInTime( 0.5, function(inst)
+        inst:DoTaskInTime(0.5, function(inst)
             if inst.monster then
                 inst.monster = false
                 if inst.components.deciduoustreeupdater then
                     inst.components.deciduoustreeupdater:StopMonster()
                     inst:RemoveComponent("deciduoustreeupdater")
                 end
-                if inst.components.combat then inst:RemoveComponent("combat") end
+                if inst.components.combat then
+                    inst:RemoveComponent("combat")
+                end
                 inst.sg:GoToState("empty")
                 inst.AnimState:SetBank("tree_leaf")
-                inst:DoTaskInTime(1*FRAMES, onburntchanges)
+                inst:DoTaskInTime(1 * FRAMES, onburntchanges)
             else
                 onburntchanges(inst)
             end
@@ -560,48 +622,46 @@ local function OnBurnt(inst, imm)
 end
 
 local function tree_burnt(inst)
-	OnBurnt(inst)
-	inst.acorntask = inst:DoTaskInTime(10,
-		function()
-			local pt = Vector3(inst.Transform:GetWorldPosition())
-			if math.random(0, 1) == 1 then
-				pt = pt + TheCamera:GetRightVec()
-			else
-				pt = pt - TheCamera:GetRightVec()
-			end
-			inst.components.lootdropper:DropLoot(pt)
-			inst.acorntask = nil
-		end)
+    OnBurnt(inst)
+    inst.acorntask = inst:DoTaskInTime(10, function()
+        local pt = Vector3(inst.Transform:GetWorldPosition())
+        if math.random(0, 1) == 1 then
+            pt = pt + TheCamera:GetRightVec()
+        else
+            pt = pt - TheCamera:GetRightVec()
+        end
+        inst.components.lootdropper:DropLoot(pt)
+        inst.acorntask = nil
+    end)
     if inst.leaveschangetask then
         inst.leaveschangetask:Cancel()
         inst.leaveschangetask = nil
     end
 end
 
-local function handler_growfromseed (inst)
-	inst.components.growable:SetStage(1)
-        if TheWorld.state.isautumn then
-            local rand = math.random()
-            if rand < .33 then
-                inst.build = "red"
-            elseif rand < .67 then
-                inst.build = "orange"
-            else
-                inst.build = "yellow"
-            end
-            inst.AnimState:SetMultColour(1, 1, 1, 1)
-            inst.leaf_state = "colorful"
-            inst.target_leaf_state = "colorful"
-        elseif TheWorld.state.iswinter then
-            inst.build = "barren"
-            inst.leaf_state = "barren"
-            inst.target_leaf_state = "barren"
+local function handler_growfromseed(inst)
+    inst.components.growable:SetStage(1)
+    if TheWorld.state.isautumn then
+        local rand = math.random()
+        if rand < .33 then
+            inst.build = "red"
+        elseif rand < .67 then
+            inst.build = "orange"
         else
-            inst.build = "normal"
-            inst.leaf_state = "normal"
-            inst.target_leaf_state = "normal"
+            inst.build = "yellow"
         end
-
+        inst.AnimState:SetMultColour(1, 1, 1, 1)
+        inst.leaf_state = "colorful"
+        inst.target_leaf_state = "colorful"
+    elseif TheWorld.state.iswinter then
+        inst.build = "barren"
+        inst.leaf_state = "barren"
+        inst.target_leaf_state = "barren"
+    else
+        inst.build = "normal"
+        inst.leaf_state = "normal"
+        inst.target_leaf_state = "normal"
+    end
 
     if GetBuild(inst).leavesbuild then
         inst.AnimState:OverrideSymbol("swap_leaves", GetBuild(inst).leavesbuild, "swap_leaves")
@@ -609,7 +669,9 @@ local function handler_growfromseed (inst)
         inst.AnimState:ClearOverrideSymbol("swap_leaves")
     end
     inst.AnimState:PlayAnimation("grow_seed_to_short")
-    if inst.leaf_state == "colorful" then SpawnLeafFX(inst, 5*FRAMES) end
+    if inst.leaf_state == "colorful" then
+        SpawnLeafFX(inst, 5 * FRAMES)
+    end
     inst.SoundEmitter:PlaySound("dontstarve/forest/treeGrow")
     inst.anims = short_anims
 
@@ -625,7 +687,6 @@ local function inspect_tree(inst)
         return "POISON"
     end
 end
-
 
 local function OnIgnite(inst)
     BurnInventoryItems(inst)
@@ -647,7 +708,7 @@ local function OnIgnite(inst)
         if inst.components.spawner:IsOccupied() then
             inst.components.spawner:ReleaseChild()
         end
-    end 
+    end
 end
 
 local function OnEntitySleep(inst)
@@ -685,11 +746,12 @@ local function OnEntityWake(inst)
         end
 
         if not inst.components.deciduoustreeupdater then
---            inst:AddComponent("deciduoustreeupdater")
+            --            inst:AddComponent("deciduoustreeupdater")
         end
     end
 
-    if inst.monster and inst.monster_start_time and inst.monster_duration and ((GetTime() - inst.monster_start_time) > inst.monster_duration) then
+    if inst.monster and inst.monster_start_time and inst.monster_duration and
+        ((GetTime() - inst.monster_start_time) > inst.monster_duration) then
         if not inst:HasTag("burnt") and not inst:HasTag("fire") and not inst:HasTag("stump") then
             StopMonster(inst)
         else
@@ -700,7 +762,9 @@ local function OnEntityWake(inst)
                 inst.components.deciduoustreeupdater:StopMonster()
                 inst:RemoveComponent("deciduoustreeupdater")
             end
-            if inst.components.combat then inst:RemoveComponent("combat") end
+            if inst.components.combat then
+                inst:RemoveComponent("combat")
+            end
         end
     end
 
@@ -725,9 +789,9 @@ end
 
 local function onsave(inst, data)
 
-	if inst.components.spawner then
-	   data.pikonest = true
-	end
+    if inst.components.spawner then
+        data.pikonest = true
+    end
 
     if inst:HasTag("burnt") or inst:HasTag("fire") then
         data.burnt = true
@@ -737,9 +801,9 @@ local function onsave(inst, data)
         data.stump = true
     end
 
-	if inst.build ~= "normal" then
-		data.build = inst.build
-	end
+    if inst.build ~= "normal" then
+        data.build = inst.build
+    end
 
     data.monster = inst.monster
     if inst.monster and inst.components.deciduoustreeupdater and inst.components.deciduoustreeupdater.monster_start_time then
@@ -754,26 +818,24 @@ end
 
 local function onload(inst, data)
     if data then
-	
-		if data.pikonest then
-			inst:AddTag("piko_nest")
-		end	
-	
-    if  data.burnt then
-        inst:AddTag("burnt")
-    end
 
-    if  data.stump then
-        inst:AddTag("stump")
-    end	
-	
-	
-	
-		if not data.build or builds[data.build] == nil then
-			inst.build = "normal"
-		else
-			inst.build = data.build
-		end
+        if data.pikonest then
+            inst:AddTag("piko_nest")
+        end
+
+        if data.burnt then
+            inst:AddTag("burnt")
+        end
+
+        if data.stump then
+            inst:AddTag("stump")
+        end
+
+        if not data.build or builds[data.build] == nil then
+            inst.build = "normal"
+        else
+            inst.build = data.build
+        end
 
         inst.target_leaf_state = data.target_leaf_state
         inst.leaf_state = data.leaf_state
@@ -788,15 +850,15 @@ local function onload(inst, data)
                 inst:AddTag("stump")
             elseif not data.burnt then
                 inst.monster = false
-                    if TheWorld.state.isautumn then
-                        inst.target_leaf_state = "colorful"
-                    elseif TheWorld.state.iswinter then
-                        inst.target_leaf_state = "barren"
-                    else
-                        inst.target_leaf_state = "normal"
-                    end
+                if TheWorld.state.isautumn then
+                    inst.target_leaf_state = "colorful"
+                elseif TheWorld.state.iswinter then
+                    inst.target_leaf_state = "barren"
+                else
+                    inst.target_leaf_state = "normal"
+                end
                 inst.components.growable:DoGrowth()
-                inst:DoTaskInTime(12*FRAMES, function(inst)
+                inst:DoTaskInTime(12 * FRAMES, function(inst)
                     OnChangeLeaves(inst, false)
                 end)
             end
@@ -804,7 +866,9 @@ local function onload(inst, data)
                 inst.components.deciduoustreeupdater:StopMonster()
                 inst:RemoveComponent("deciduoustreeupdater")
             end
-            if inst.components.combat then inst:RemoveComponent("combat") end
+            if inst.components.combat then
+                inst:RemoveComponent("combat")
+            end
             inst.sg:GoToState("empty")
         end
 
@@ -827,10 +891,16 @@ local function onload(inst, data)
         if data.burnt then
             inst:AddTag("fire") -- Add the fire tag here: OnEntityWake will handle it actually doing burnt logic
         elseif data.stump then
-            while inst:HasTag("shelter") do inst:RemoveTag("shelter") end
-            while inst:HasTag("cattoyairborne") do inst:RemoveTag("cattoyairborne") end
+            while inst:HasTag("shelter") do
+                inst:RemoveTag("shelter")
+            end
+            while inst:HasTag("cattoyairborne") do
+                inst:RemoveTag("cattoyairborne")
+            end
             inst:RemoveComponent("burnable")
-            if not inst:HasTag("stump") then inst:AddTag("stump") end
+            if not inst:HasTag("stump") then
+                inst:AddTag("stump")
+            end
             if data.monster then
                 inst.AnimState:SetBank("tree_leaf_monster")
                 if GetBuild(inst).leavesbuild then
@@ -847,13 +917,13 @@ local function onload(inst, data)
             inst:RemoveComponent("workable")
             inst:RemoveComponent("propagator")
             inst:RemoveComponent("growable")
---            inst:RemoveComponent("blowinwindgust")
+            -- inst:RemoveComponent("blowinwindgust")
             RemovePhysicsColliders(inst)
 
-    		inst:AddComponent("workable")
-    	    inst.components.workable:SetWorkAction(ACTIONS.DIG)
-    	    inst.components.workable:SetOnFinishCallback(dig_up_stump)
-    	    inst.components.workable:SetWorkLeft(1)
+            inst:AddComponent("workable")
+            inst.components.workable:SetWorkAction(ACTIONS.DIG)
+            inst.components.workable:SetOnFinishCallback(dig_up_stump)
+            inst.components.workable:SetWorkLeft(1)
         end
     end
 
@@ -866,7 +936,9 @@ local function onload(inst, data)
             OnChangeLeaves(inst)
         else
             if inst.build == "barren" then
-                while inst:HasTag("shelter") do inst:RemoveTag("shelter") end
+                while inst:HasTag("shelter") do
+                    inst:RemoveTag("shelter")
+                end
                 inst.AnimState:Hide("mouseover")
             else
                 inst.AnimState:Show("mouseover")
@@ -925,7 +997,7 @@ end
 
 local function startspawning(inst)
     if inst.components.spawner then
-        inst.components.spawner:SpawnWithDelay(2 + math.random(20) )
+        inst.components.spawner:SpawnWithDelay(2 + math.random(20))
     end
 end
 
@@ -940,90 +1012,88 @@ local function OnSpawned(inst, child)
 end
 
 local function testspawning(inst)
-    if  TheWorld.state.isday or (TheWorld.state.moonphase == "new" and TheWorld.state.isnight) then                
+    if TheWorld.state.isday or (TheWorld.state.moonphase == "new" and TheWorld.state.isnight) then
         startspawning(inst)
     else
         stopspawning(inst)
     end
 end
 
-function GetItemschild(criteriaFn,child)
+function GetItemschild(criteriaFn, child)
     local items = {}
     if criteriaFn and child and child.components.inventory and child.components.inventory.itemslots then
-        for k,v in pairs(child.components.inventory.itemslots) do
+        for k, v in pairs(child.components.inventory.itemslots) do
             if criteriaFn(k, v) then
                 table.insert(items, v)
             end
         end
     end
-    
+
     return items
 end
 
-local function onoccupied(inst,child)
+local function onoccupied(inst, child)
     if child.components.inventory:NumItems() > 0 then
-        for i, item in ipairs(GetItemschild(function() return true end),child) do
+        for i, item in ipairs(GetItemschild(function()
+            return true
+        end), child) do
             child.components.inventory:DropItem(item)
             inst.components.inventory:GiveItem(item)
         end
     end
 end
 
-
 local function setupspawner(inst)
-	WorldSettings_Spawner_SpawnDelay(inst, TUNING.TOTAL_DAY_TIME, true)
-    inst.components.spawner:Configure( "piko", 10) --TUNING.PIKO_RESPAWN_TIME
---    inst.components.spawner.childfn = GetChild
---    inst.components.spawner:SetOnSpawnedFn(OnSpawned)
+    WorldSettings_Spawner_SpawnDelay(inst, TUNING.TOTAL_DAY_TIME, true)
+    inst.components.spawner:Configure("piko", 10) -- TUNING.PIKO_RESPAWN_TIME
+    -- inst.components.spawner.childfn = GetChild
+    -- inst.components.spawner:SetOnSpawnedFn(OnSpawned)
     inst.components.spawner:SetOnOccupiedFn(onoccupied)
     inst:AddTag("dumpchildrenonignite")
     -- This tag allows the piko to spawn at the same location as the home (ie. tree), so that when it plays the
     -- animation for climbing down, it appears on the trunk, rather than floating in the air next to the trunk.
     -- inst:AddTag("exclude_home_offset")
-	inst:WatchWorldState("isday", testspawning)
-	inst:WatchWorldState("isdusk", testspawning)
-	inst:WatchWorldState("isnight", testspawning) 
-	
-end
+    inst:WatchWorldState("isday", testspawning)
+    inst:WatchWorldState("isdusk", testspawning)
+    inst:WatchWorldState("isnight", testspawning)
 
+end
 
 local function oninit(inst)
- if inst:HasTag("piko_nest") and not inst:HasTag("stump") and not inst:HasTag("burnt") then
-local px, py, pz = inst.Transform:GetWorldPosition()	
-local novacasa = SpawnPrefab("teatree_piko_nest")
-novacasa.Transform:SetPosition(px, py, pz)	
-inst:Remove()
+    if inst:HasTag("piko_nest") and not inst:HasTag("stump") and not inst:HasTag("burnt") then
+        local px, py, pz = inst.Transform:GetWorldPosition()
+        local novacasa = SpawnPrefab("teatree_piko_nest")
+        novacasa.Transform:SetPosition(px, py, pz)
+        inst:Remove()
+    end
 end
-end 
-
-
 
 local function makefn(build, stage, data)
 
     local function fn(Sim)
-		local l_stage = stage
-		if l_stage == 0 then
-			l_stage = math.random(1,3)
-		end
+        local l_stage = stage
+        if l_stage == 0 then
+            l_stage = math.random(1, 3)
+        end
 
         local inst = CreateEntity()
-	    inst.entity:AddNetwork()
+        inst.entity:AddNetwork()
         local trans = inst.entity:AddTransform()
         local anim = inst.entity:AddAnimState()
         local sound = inst.entity:AddSoundEmitter()
 
         MakeObstaclePhysics(inst, .25)
 
-		local minimap = inst.entity:AddMiniMapEntity()
+        local minimap = inst.entity:AddMiniMapEntity()
         minimap:SetIcon("teatree.png")
-		minimap:SetPriority(-1)
+        minimap:SetPriority(-1)
 
         inst:AddTag("tree")
         inst:AddTag("teatree")
         inst:AddTag("shelter")
         inst:AddTag("workable")
         inst:AddTag("cattoyairborne")
-		inst:AddTag("twiggytreesw")		
+        inst:AddTag("twiggytreesw")
 
         anim:SetBank("tree_leaf")
         inst.build = build
@@ -1035,19 +1105,19 @@ local function makefn(build, stage, data)
         inst.color = 0.7 + math.random() * 0.3
         anim:SetMultColour(inst.color, inst.color, inst.color, 1)
 
-		inst.entity:SetPristine()
+        inst.entity:SetPristine()
 
-		if not TheWorld.ismastersim then
-			return inst
-		end		
-		
+        if not TheWorld.ismastersim then
+            return inst
+        end
+
         MakeLargeBurnable(inst)
         inst.components.burnable:SetFXLevel(5)
         inst.components.burnable:SetOnBurntFn(tree_burnt)
         inst.components.burnable.extinguishimmediately = false
         inst.components.burnable:SetOnIgniteFn(OnIgnite)
 
---        inst.components.burnable:MakeDragonflyBait(1)
+        -- inst.components.burnable:MakeDragonflyBait(1)
 
         MakeLargePropagator(inst)
 
@@ -1065,13 +1135,17 @@ local function makefn(build, stage, data)
         -- An example of this is the squirrel (ie. piko), which steals items off the ground and takes them back to the tree.
         inst:AddComponent("inventory")
 
---        inst:AddComponent("deciduoustreeupdater")
+        --        inst:AddComponent("deciduoustreeupdater")
         inst:ListenForEvent("sway", function(inst, data)
             print("got")
             local m = nil
             local m_pst = nil
-            if data and data.monster then m = data.monster end
-            if data and data.monsterpost then m_pst = data.monsterpost end            
+            if data and data.monster then
+                m = data.monster
+            end
+            if data and data.monsterpost then
+                m_pst = data.monsterpost
+            end
             Sway(inst, m, m_pst)
         end)
 
@@ -1081,7 +1155,7 @@ local function makefn(build, stage, data)
         inst:ListenForEvent("deciduousleaffx", function(it)
             if inst.entity:IsAwake() then
                 if inst.leaf_state == "colorful" and GetTime() - inst.lastleaffxtime > inst.leaffxinterval then
-					local variance = math.random() * 2
+                    local variance = math.random() * 2
                     SpawnLeafFX(inst, variance)
                     inst.leaffxinterval = math.random(MIN_SWAY_FX_FREQUENCY, MAX_SWAY_FX_FREQUENCY)
                     inst.lastleaffxtime = GetTime()
@@ -1097,7 +1171,7 @@ local function makefn(build, stage, data)
         inst.components.growable:StartGrowing()
 
         inst.growfromseed = handler_growfromseed
---[[
+        --[[
         inst:AddComponent("blowinwindgust")
         inst.components.blowinwindgust:SetWindSpeedThreshold(DECIDUOUS_WINDBLOWN_SPEED)
         inst.components.blowinwindgust:SetDestroyChance(DECIDUOUS_WINDBLOWN_FALL_CHANCE)
@@ -1107,41 +1181,40 @@ local function makefn(build, stage, data)
 ]]
         inst.leaf_state = "normal"
 
-        inst.AnimState:SetTime(math.random()*2)
+        inst.AnimState:SetTime(math.random() * 2)
 
         inst.OnSave = onsave
         inst.OnLoad = onload
 
-		MakeSnowCovered(inst, .01)
+        MakeSnowCovered(inst, .01)
 
-		inst:SetPrefabName( GetBuild(inst).prefab_name )
+        inst:SetPrefabName(GetBuild(inst).prefab_name)
 
-        if data =="burnt"  then
+        if data == "burnt" then
             OnBurnt(inst)
         end
 
-        if data =="stump"  then
+        if data == "stump" then
             inst:RemoveTag("shelter")
             inst:RemoveComponent("burnable")
             MakeSmallBurnable(inst)
             inst:RemoveComponent("workable")
             inst:RemoveComponent("propagator")
             inst:RemoveComponent("growable")
---            inst:RemoveComponent("blowinwindgust")
+            --            inst:RemoveComponent("blowinwindgust")
             RemovePhysicsColliders(inst)
             inst.AnimState:PlayAnimation(inst.anims.stump)
             inst:AddTag("stump")
-			inst:RemoveTag("teatree")
+            inst:RemoveTag("teatree")
             inst:AddComponent("workable")
             inst.components.workable:SetWorkAction(ACTIONS.DIG)
             inst.components.workable:SetOnFinishCallback(dig_up_stump)
             inst.components.workable:SetWorkLeft(1)
         end
 
-		
-		inst:DoTaskInTime(0.5, oninit)
+        inst:DoTaskInTime(0.5, oninit)
 
-        inst.setupspawner= setupspawner
+        inst.setupspawner = setupspawner
         inst.OnEntitySleep = OnEntitySleep
         inst.OnEntityWake = OnEntityWake
 
@@ -1155,33 +1228,32 @@ local function makefn(build, stage, data)
     return fn
 end
 
-
 local function makefn1(build, stage, data)
 
     local function fn(Sim)
-		local l_stage = stage
-		if l_stage == 0 then
-			l_stage = math.random(1,3)
-		end
+        local l_stage = stage
+        if l_stage == 0 then
+            l_stage = math.random(1, 3)
+        end
 
         local inst = CreateEntity()
-	    inst.entity:AddNetwork()
+        inst.entity:AddNetwork()
         local trans = inst.entity:AddTransform()
         local anim = inst.entity:AddAnimState()
         local sound = inst.entity:AddSoundEmitter()
 
         MakeObstaclePhysics(inst, .25)
 
-		local minimap = inst.entity:AddMiniMapEntity()
+        local minimap = inst.entity:AddMiniMapEntity()
         minimap:SetIcon("teatree.png")
-		minimap:SetPriority(-1)
+        minimap:SetPriority(-1)
 
         inst:AddTag("tree")
         inst:AddTag("teatree")
         inst:AddTag("shelter")
         inst:AddTag("workable")
         inst:AddTag("cattoyairborne")
-		inst:AddTag("plant")
+        inst:AddTag("plant")
 
         anim:SetBank("tree_leaf")
         inst.build = build
@@ -1193,19 +1265,19 @@ local function makefn1(build, stage, data)
         inst.color = 0.7 + math.random() * 0.3
         anim:SetMultColour(inst.color, inst.color, inst.color, 1)
 
-		inst.entity:SetPristine()
+        inst.entity:SetPristine()
 
-		if not TheWorld.ismastersim then
-			return inst
-		end		
-		
+        if not TheWorld.ismastersim then
+            return inst
+        end
+
         MakeLargeBurnable(inst)
         inst.components.burnable:SetFXLevel(5)
         inst.components.burnable:SetOnBurntFn(tree_burnt)
         inst.components.burnable.extinguishimmediately = false
         inst.components.burnable:SetOnIgniteFn(OnIgnite)
 
---        inst.components.burnable:MakeDragonflyBait(1)
+        --        inst.components.burnable:MakeDragonflyBait(1)
 
         MakeLargePropagator(inst)
 
@@ -1223,13 +1295,17 @@ local function makefn1(build, stage, data)
         -- An example of this is the squirrel (ie. piko), which steals items off the ground and takes them back to the tree.
         inst:AddComponent("inventory")
 
---        inst:AddComponent("deciduoustreeupdater")
+        --        inst:AddComponent("deciduoustreeupdater")
         inst:ListenForEvent("sway", function(inst, data)
             print("got")
             local m = nil
             local m_pst = nil
-            if data and data.monster then m = data.monster end
-            if data and data.monsterpost then m_pst = data.monsterpost end            
+            if data and data.monster then
+                m = data.monster
+            end
+            if data and data.monsterpost then
+                m_pst = data.monsterpost
+            end
             Sway(inst, m, m_pst)
         end)
 
@@ -1239,7 +1315,7 @@ local function makefn1(build, stage, data)
         inst:ListenForEvent("deciduousleaffx", function(it)
             if inst.entity:IsAwake() then
                 if inst.leaf_state == "colorful" and GetTime() - inst.lastleaffxtime > inst.leaffxinterval then
-					local variance = math.random() * 2
+                    local variance = math.random() * 2
                     SpawnLeafFX(inst, variance)
                     inst.leaffxinterval = math.random(MIN_SWAY_FX_FREQUENCY, MAX_SWAY_FX_FREQUENCY)
                     inst.lastleaffxtime = GetTime()
@@ -1255,7 +1331,7 @@ local function makefn1(build, stage, data)
         inst.components.growable:StartGrowing()
 
         inst.growfromseed = handler_growfromseed
---[[
+        --[[
         inst:AddComponent("blowinwindgust")
         inst.components.blowinwindgust:SetWindSpeedThreshold(DECIDUOUS_WINDBLOWN_SPEED)
         inst.components.blowinwindgust:SetDestroyChance(DECIDUOUS_WINDBLOWN_FALL_CHANCE)
@@ -1263,28 +1339,28 @@ local function makefn1(build, stage, data)
         inst.components.blowinwindgust:SetDestroyFn(OnGustFall)
         inst.components.blowinwindgust:Start()
 ]]
-		inst:AddComponent("mystery")
+        inst:AddComponent("mystery")
         inst.leaf_state = "normal"
 
-        inst.AnimState:SetTime(math.random()*2)
+        inst.AnimState:SetTime(math.random() * 2)
 
         inst.OnSave = onsave
         inst.OnLoad = onload
 
-		MakeSnowCovered(inst, .01)
+        MakeSnowCovered(inst, .01)
 
-        if data =="burnt"  then
+        if data == "burnt" then
             OnBurnt(inst)
         end
 
-        if data =="stump"  then
+        if data == "stump" then
             inst:RemoveTag("shelter")
             inst:RemoveComponent("burnable")
             MakeSmallBurnable(inst)
             inst:RemoveComponent("workable")
             inst:RemoveComponent("propagator")
             inst:RemoveComponent("growable")
---            inst:RemoveComponent("blowinwindgust")
+            --            inst:RemoveComponent("blowinwindgust")
             RemovePhysicsColliders(inst)
             inst.AnimState:PlayAnimation(inst.anims.stump)
             inst:AddTag("stump")
@@ -1294,12 +1370,10 @@ local function makefn1(build, stage, data)
             inst.components.workable:SetWorkLeft(1)
         end
 
-
-        inst:AddComponent( "spawner" )
+        inst:AddComponent("spawner")
         setupspawner(inst)
 
-
-        inst.setupspawner= setupspawner
+        inst.setupspawner = setupspawner
         inst.OnEntitySleep = OnEntitySleep
         inst.OnEntityWake = OnEntityWake
 
@@ -1314,17 +1388,13 @@ local function makefn1(build, stage, data)
 end
 
 local function tree(name, build, stage, data)
-    return Prefab("forest/objects/trees/"..name, makefn(build, stage, data), assets, prefabs)
+    return Prefab("forest/objects/trees/" .. name, makefn(build, stage, data), assets, prefabs)
 end
 
 local function tree1(name, build, stage, data)
-    return Prefab("forest/objects/trees/"..name, makefn1(build, stage, data), assets, prefabs)
+    return Prefab("forest/objects/trees/" .. name, makefn1(build, stage, data), assets, prefabs)
 end
 
-return  tree("teatree", "normal", 0),
-		tree("teatree_normal", "normal", 2),
-        tree("teatree_tall", "normal", 3),
-        tree("teatree_short", "normal", 1),
-        tree("teatree_burnt", "normal", 0, "burnt"),
-        tree("teatree_stump", "normal", 0, "stump"),
-        tree1("teatree_piko_nest", "normal", 0)
+return tree("teatree", "normal", 0), tree("teatree_normal", "normal", 2), tree("teatree_tall", "normal", 3),
+    tree("teatree_short", "normal", 1), tree("teatree_burnt", "normal", 0, "burnt"),
+    tree("teatree_stump", "normal", 0, "stump"), tree1("teatree_piko_nest", "normal", 0)
