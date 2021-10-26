@@ -1,0 +1,14 @@
+<Atlas>
+<Texture filename="novositens.tex" /><Elements>
+<Element name="wheat.tex" 						u1="0.0" u2="0.1" v1="1" v2="0.0" />
+<Element name="wheat_oversized.tex" 			u1="0.1" u2="0.2" v1="1" v2="0.0" />
+<Element name="turnip_oversized.tex" 			u1="0.2" u2="0.3" v1="1" v2="0.0" />
+<Element name="turf_quagmire_peatforest.tex" 	u1="0.3" u2="0.4" v1="1" v2="0.0" />
+<Element name="turf_quagmire_gateway.tex" 		u1="0.4" u2="0.5" v1="1" v2="0.0" />
+<Element name="turf_quagmire_parkfield.tex"		u1="0.5" u2="0.6" v1="1" v2="0.0" />
+<Element name="turf_quagmire_citystone.tex" 	u1="0.6" u2="0.7" v1="1" v2="0.0" />
+<Element name="turf_quagmire_parkstone.tex" 	u1="0.7" u2="0.8" v1="1" v2="0.0" />
+<Element name="spider_tropical.tex" 			u1="0.8" u2="0.9" v1="1" v2="0.0" />
+<Element name="spider_snow2.tex" 				u1="0.9" u2="1.0" v1="1" v2="0.0" />
+</Elements>
+</Atlas>

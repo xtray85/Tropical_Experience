@@ -1,0 +1,140 @@
+<Atlas>
+<Texture filename="creepindedeepicon.tex" /><Elements>
+<Element name="doydoynest.png" u1="0.0" u2="0.05" v1="0.95" v2="1" />
+<Element name="minimap_ballphinhouse.png" u1="0.05" u2="0.1" v1="0.95" v2="1" />
+<Element name="bambootree.png" u1="0.1" u2="0.15" v1="0.95" v2="1" />
+<Element name="minimap_bush_vine.png" u1="0.15" u2="0.2" v1="0.95" v2="1" />
+<Element name="minimap_cactus_volcano.png" u1="0.2" u2="0.25" v1="0.95" v2="1" />
+<Element name="minimap_chiminea.png" u1="0.25" u2="0.3" v1="0.95" v2="1" />
+<Element name="minimap_coffeebush.png" u1="0.3" u2="0.35" v1="0.95" v2="1" />
+<Element name="minimap_coralreef.png" u1="0.35" u2="0.40" v1="0.95" v2="1" />
+<Element name="minimap_cottontree.png" u1="0.40" u2="0.45" v1="0.95" v2="1" />
+<Element name="minimap_crate.png" u1="0.45" u2="0.50" v1="0.95" v2="1" />
+<Element name="minimap_dragoon_den.png" u1="0.50" u2="0.55" v1="0.95" v2="1" />
+<Element name="minimap_fishinhole.png" u1="0.55" u2="0.6" v1="0.95" v2="1" />
+<Element name="minimap_geyser.png" u1="0.60" u2="0.65" v1="0.95" v2="1" />
+<Element name="minimap_jungletree.png" u1="0.65" u2="0.70" v1="0.95" v2="1" />
+<Element name="minimap_rockmagmagold.png" u1="0.70" u2="0.75" v1="0.95" v2="1" />
+<Element name="minimap_limpetrock.png" u1="0.75" u2="0.8" v1="0.95" v2="1" />
+<Element name="minimap_livingjungletree.png" u1="0.8" u2="0.85" v1="0.95" v2="1" />
+<Element name="minimap_mangrovetrees.png" u1="0.85" u2="0.90" v1="0.95" v2="1" />
+<Element name=".png" u1="0.90" u2="95" v1="0.95" v2="1" />
+<Element name="minimap_octopusking.png" u1="0.95" u2="1" v1="0.95" v2="1" />
+
+<Element name="palmleaf_hut.tex" u1="0.0" u2="0.05" v1="0.90" v2="0.95" />
+<Element name="minimap_palmtree.png" u1="0.05" u2="0.1" v1="0.90" v2="0.95" />
+<Element name="minimap_quagmire_pond_salt.png" u1="0.1" u2="0.15" v1="0.90" v2="0.95" />
+<Element name="minimap_quagmire_swampig_house.png" u1="0.15" u2="0.2" v1="0.90" v2="0.95" />
+<Element name="minimap_quagmire_swampig_house_rubble.png" u1="0.2" u2="0.25" v1="0.90" v2="0.95" />
+<Element name="minimap_rock_charcoal.png" u1="0.25" u2="0.3" v1="0.90" v2="0.95" />
+<Element name="minimap_rock_obsidian.png" u1="0.3" u2="0.35" v1="0.90" v2="0.95" />
+<Element name="minimap_rockmagma.png" u1="0.35" u2="0.4" v1="0.90" v2="0.95" />
+<Element name="minimap_seaweed_planted.png" u1="0.4" u2="0.45" v1="0.90" v2="0.95" />
+<Element name="minimap_sharkittenspawner.png" u1="0.45" u2="0.5" v1="0.90" v2="0.95" />
+<Element name="minimap_slotmachine.png" u1="0.5" u2="0.55" v1="0.90" v2="0.95" />
+<Element name="minimap_tidalpool.png" u1="0.55" u2="0.6" v1="0.90" v2="0.95" />
+<Element name="minimap_woodlegs.png" u1="0.6" u2="0.65" v1="0.90" v2="0.95" />
+<Element name="minimap_workbench.png" u1="0.65" u2="0.7" v1="0.90" v2="0.95" />
+<Element name="minimap_wildborehouse.png" u1="0.70" u2="0.75" v1="0.90" v2="0.95" />
+<Element name="minimap_woodlegs_cage.png" u1="0.75" u2="0.8" v1="0.90" v2="0.95" />
+<Element name="krakenchest.png" u1="0.80" u2="0.85" v1="0.90" v2="0.95" />
+<Element name="redbarrel.png" u1="0.85" u2="0.9" v1="0.90" v2="0.95" />
+<Element name=".tex" u1="0.90" u2="0.95" v1="0.90" v2="0.95" />
+<Element name="luggagechest.png" u1="0.95" u2="1" v1="0.90" v2="0.95" />
+
+
+<Element name="musselFarm.tex" u1="0.0" u2="0.05" v1="0.85" v2="0.90" />
+<Element name="stungray_spawner.tex" u1="0.05" u2="0.1" v1="0.85" v2="0.90" />
+<Element name=".tex" u1="0.1" u2="0.15" v1="0.85" v2="0.90" />
+<Element name="quacken.png" u1="0.15" u2="0.2" v1="0.85" v2="0.90" />
+<Element name="lobsterhole.png" u1="0.2" u2="0.25" v1="0.85" v2="0.90" />
+<Element name="minimap_mermfishhouse.png" u1="0.25" u2="0.3" v1="0.85" v2="0.90" />
+<Element name="coral_brain_rock.png" u1="0.3" u2="0.35" v1="0.85" v2="0.90" />
+<Element name=".tex" u1="0.35" u2="0.4" v1="0.85" v2="0.90" />
+<Element name="wreck.png" u1="0.40" u2="0.45" v1="0.85" v2="0.90" />
+<Element name="buriedtreasure.png" u1="0.45" u2="0.5" v1="0.85" v2="0.90" />
+<Element name=".tex" u1="0.50" u2="0.55" v1="0.85" v2="0.90" />
+<Element name="primeapebarrel.png" u1="0.55" u2="0.6" v1="0.85" v2="0.90" />
+<Element name="minimap_raft.tex" u1="0.60" u2="0.65" v1="0.85" v2="0.90" />
+<Element name="minimap_lograft.tex" u1="0.65" u2="0.7" v1="0.85" v2="0.90" />
+<Element name="minimap_rowboat.tex" u1="0.70" u2="0.75" v1="0.85" v2="0.90" />
+<Element name="minimap_cargoboat.tex" u1="0.75" u2="0.8" v1="0.85" v2="0.90" />
+<Element name="minimap_armouredboat.tex" u1="0.8" u2="0.85" v1="0.85" v2="0.90" />
+<Element name="minimap_encrustedboat.tex" u1="0.85" u2="0.9" v1="0.85" v2="0.90" />
+<Element name="minimap_surfboard.tex" u1="0.9" u2="0.95" v1="0.85" v2="0.90" />
+<Element name="minimap_woodlegsboat.tex" u1="0.95" u2="1" v1="0.85" v2="0.90" />
+
+<Element name="woodlegs.tex" u1="0.6" u2="0.65" v1="0.90" v2="0.95" />
+
+<Element name="buoy.png" u1="0.0" u2="0.05" v1="0.80" v2="0.85" />
+<Element name=".tex" u1="0.05" u2="0.1" v1="0.80" v2="0.85" />
+<Element name="walani.tex" u1="0.1" u2="0.15" v1="0.80" v2="0.85" />
+<Element name="warly.tex" u1="0.15" u2="0.2" v1="0.80" v2="0.85" />
+<Element name="wilbur.tex" u1="0.2" u2="0.25" v1="0.80" v2="0.85" />
+<Element name="icemachine.png" u1="0.25" u2="0.3" v1="0.80" v2="0.85" />
+<Element name="fish_farm.png" u1="0.3" u2="0.35" v1="0.80" v2="0.85" />
+<Element name="buoy.png" u1="0.35" u2="0.4" v1="0.80" v2="0.85" />
+<Element name="minimap_ballphinhouse.png" u1="0.40" u2="0.45" v1="0.80" v2="0.85" />
+<Element name="sea_yard.png" u1="0.45" u2="0.5" v1="0.80" v2="0.85" />
+<Element name="piratepack.png" u1="0.50" u2="0.55" v1="0.80" v2="0.85" />
+<Element name="thatchpack.png" u1="0.55" u2="0.6" v1="0.80" v2="0.85" />
+<Element name="tar_extractor.png" u1="0.60" u2="0.65" v1="0.80" v2="0.85" />
+<Element name="tar_pit.png" u1="0.65" u2="0.7" v1="0.80" v2="0.85" />
+<Element name="researchlab5.png" u1="0.70" u2="0.75" v1="0.80" v2="0.85" />
+<Element name="spicepack.tex" u1="0.75" u2="0.8" v1="0.80" v2="0.85" />
+<Element name="waterchest.png" u1="0.8" u2="0.85" v1="0.80" v2="0.85" />
+<Element name="rawling.png" u1="0.85" u2="0.9" v1="0.80" v2="0.85" />
+<Element name=".png" u1="0.9" u2="0.95" v1="0.80" v2="0.85" />
+<Element name=".png" u1="0.95" u2="1" v1="0.80" v2="0.85" />
+
+<Element name="sea_chiminea.png" u1="0.0" u2="0.05" v1="0.75" v2="0.80" />
+<Element name="whale_carcass.png" u1="0.05" u2="0.1" v1="0.75" v2="0.80" />
+<Element name=".png" u1="0.1" u2="0.15" v1="0.75" v2="0.80" />
+<Element name=".png" u1="0.15" u2="0.2" v1="0.75" v2="0.80" />
+<Element name=".png" u1="0.2" u2="0.25" v1="0.75" v2="0.80" />
+<Element name=".png" u1="0.25" u2="0.3" v1="0.75" v2="0.80" />
+<Element name=".png" u1="0.3" u2="0.35" v1="0.75" v2="0.80" />
+<Element name="galinheiro.png" u1="0.35" u2="0.4" v1="0.75" v2="0.80" />
+<Element name="galinheiro.tex" u1="0.35" u2="0.4" v1="0.75" v2="0.80" />
+<Element name="mushtree_yelow.png" u1="0.40" u2="0.45" v1="0.75" v2="0.80" />
+<Element name="pandahouse.png" u1="0.45" u2="0.5" v1="0.75" v2="0.80" />
+<Element name="cristaled_tree.png" u1="0.50" u2="0.55" v1="0.75" v2="0.80" />
+<Element name="fishpalace.png" u1="0.55" u2="0.6" v1="0.75" v2="0.80" />
+<Element name="wildbeaver_house.png" u1="0.60" u2="0.65" v1="0.75" v2="0.80" />
+<Element name="pig_shop_spears.png" u1="0.65" u2="0.7" v1="0.75" v2="0.80" />
+<Element name="pigiglu.png" u1="0.70" u2="0.75" v1="0.75" v2="0.80" />
+<Element name="wobster_densw.png" u1="0.75" u2="0.8" v1="0.75" v2="0.80" />
+<Element name="piggravestones.png" u1="0.8" u2="0.85" v1="0.75" v2="0.80" />
+<Element name="tree_forest_rot.png" u1="0.85" u2="0.9" v1="0.75" v2="0.80" />
+<Element name="snowspiderden2.png" u1="0.9" u2="0.95" v1="0.75" v2="0.80" />
+<Element name="pandatree.png" u1="0.95" u2="1" v1="0.75" v2="0.80" />
+
+
+<Element name="tree_mangrovebee.png" 	 u1="0.00" u2="0.05" v1="0.70" v2="0.75" />
+<Element name="mutator_frost.tex" 	 	 u1="0.05" u2="0.10" v1="0.70" v2="0.75" />
+<Element name="mutator_tropical.tex" 	 u1="0.10" u2="0.15" v1="0.70" v2="0.75" />
+<Element name="grotto_grub_nest.png" 	 u1="0.15" u2="0.20" v1="0.70" v2="0.75" />
+<Element name="anthill_cavelamp.png" 	 u1="0.20" u2="0.25" v1="0.70" v2="0.75" />
+<Element name="anthillcave.png" 		 u1="0.25" u2="0.30" v1="0.70" v2="0.75" />
+<Element name="grotto_parsnip_giant.png" u1="0.30" u2="0.35" v1="0.70" v2="0.75" />
+<Element name="grotto_parsnip_eaten.tex" u1="0.35" u2="0.40" v1="0.70" v2="0.75" />
+<Element name="grotto_parsnip.tex" 		 u1="0.40" u2="0.45" v1="0.70" v2="0.75" />
+<Element name="spidercoralhole.png" 	 u1="0.45" u2="0.50" v1="0.70" v2="0.75" />
+<Element name="grotto_pillar_bug.png" 	 u1="0.50" u2="0.55" v1="0.70" v2="0.75" />
+<Element name="feather_chicken.tex" 	 u1="0.55" u2="0.60" v1="0.70" v2="0.75" />
+<Element name="icedpad.png" 			 u1="0.60" u2="0.65" v1="0.70" v2="0.75" />
+<Element name="coi.png" 				 u1="0.65" u2="0.70" v1="0.70" v2="0.75" />
+<Element name=".png" u1="0.70" u2="0.75" v1="0.70" v2="0.75" />
+<Element name=".png" u1="0.75" u2="0.80" v1="0.70" v2="0.75" />
+<Element name=".png" u1="0.80" u2="0.85" v1="0.70" v2="0.75" />
+<Element name=".png" u1="0.85" u2="0.90" v1="0.70" v2="0.75" />
+<Element name=".png" u1="0.90" u2="0.95" v1="0.70" v2="0.75" />
+<Element name=".png" u1="0.95" u2="1.00" v1="0.70" v2="0.75" />
+
+
+<Element name="minimap_volcano_entrance.png" u1="0" u2="0.15" v1="0" v2="0.15" />
+<Element name="minimap_tigerpool.png" u1="0.15" u2="0.30" v1="0" v2="0.15" />
+<Element name="nauticaltab.png" u1="0.30" u2="0.40" v1="0" v2="0.1" />
+
+</Elements>
+</Atlas>

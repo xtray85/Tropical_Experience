@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Atlas>
+	<Texture filename="tfwp_inventoryimgs.tex" />
+	<Elements>
+		<Element name="forge_tab.tex" u1="0.001" u2="0.1943125" v2="0.999" v1="0.610375" variant="" />
+		<Element name="tfwp_barbed_helm_hat.tex" u1="0.1963125" u2="0.3193125" v2="0.999" v1="0.751" variant="" />
+		<Element name="tfwp_blossom_garland_hat.tex" u1="0.3213125" u2="0.4443125" v2="0.999" v1="0.751" variant="" />
+		<Element name="tfwp_control_book.tex" u1="0.1963125" u2="0.3193125" v2="0.749" v1="0.501" variant="" />
+		<Element name="tfwp_feather_garland_hat.tex" u1="0.3213125" u2="0.4443125" v2="0.749" v1="0.501" variant="" />
+		<Element name="tfwp_golden_chain_armor.tex" u1="0.001" u2="0.124" v2="0.608375" v1="0.360375" variant="" />
+		<Element name="tfwp_grass_tunic_armor.tex" u1="0.126" u2="0.249" v2="0.499" v1="0.251" variant="" />
+		<Element name="tfwp_heavy_sword.tex" u1="0.251" u2="0.374" v2="0.499" v1="0.251" variant="" />
+		<Element name="tfwp_hypno_coat_armor.tex" u1="0.376" u2="0.499" v2="0.499" v1="0.251" variant="" />
+		<Element name="tfwp_infernal_staff.tex" u1="0.001" u2="0.124" v2="0.358375" v1="0.110375" variant="" />
+		<Element name="tfwp_lava_hammer.tex" u1="0.126" u2="0.249" v2="0.249" v1="0.001" variant="" />
+		<Element name="tfwp_leather_light_armor.tex" u1="0.251" u2="0.374" v2="0.249" v1="0.001" variant="" />
+		<Element name="tfwp_moon_heavy_armor.tex" u1="0.376" u2="0.499" v2="0.249" v1="0.001" variant="" />
+		<Element name="tfwp_nox_helm_hat.tex" u1="0.4463125" u2="0.5693125" v2="0.999" v1="0.751" variant="" />
+		<Element name="tfwp_spear_gung.tex" u1="0.5713125" u2="0.6943125" v2="0.999" v1="0.751" variant="" />
+		<Element name="tfwp_spear_lance.tex" u1="0.6963125" u2="0.8193125" v2="0.999" v1="0.751" variant="" />
+		<Element name="tfwp_steel_wool_armor.tex" u1="0.8213125" u2="0.9443125" v2="0.999" v1="0.751" variant="" />
+		<Element name="tfwp_tusk_vest_armor.tex" u1="0.4463125" u2="0.5693125" v2="0.749" v1="0.501" variant="" />
+		<Element name="tfwp_tusk_vest_b_day.tex" u1="0.5713125" u2="0.6943125" v2="0.749" v1="0.501" variant="" />
+		<Element name="tfwp_tusk_vest_b_dusk.tex" u1="0.6963125" u2="0.8193125" v2="0.749" v1="0.501" variant="" />
+		<Element name="tfwp_tusk_vest_b_night.tex" u1="0.8213125" u2="0.9443125" v2="0.749" v1="0.501" variant="" />
+		<Element name="tfwp_worm_suit_armor.tex" u1="0.501" u2="0.624" v2="0.499" v1="0.251" variant="" />
+	</Elements>
+</Atlas>

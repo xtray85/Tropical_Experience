@@ -1,0 +1,10 @@
+<Atlas>
+<Texture filename="store.tex" /><Elements>
+<Element name="quagmire_goatmum.tex" 		u1="0.0" u2="0.1" v1="1" v2="0.3" />
+<Element name="store.tex" 					u1="0.1" u2="0.2" v1="1" v2="0.3" />
+<Element name="store3.tex" 					u1="0.2" u2="0.3" v1="1" v2="0.3" />
+<Element name="quagmire_goatkid.tex" 		u1="0.3" u2="0.4" v1="1" v2="0.3" />
+<Element name="quagmire_swampigelder.tex" 	u1="0.4" u2="0.5" v1="1" v2="0.3" />
+<Element name="lavaarena_boarlord.tex" 		u1="0.5" u2="0.6" v1="1" v2="0.3" />
+</Elements>
+</Atlas>
