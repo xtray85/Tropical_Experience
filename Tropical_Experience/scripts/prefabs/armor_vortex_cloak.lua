@@ -38,7 +38,7 @@ local function onequip(inst, owner)
     owner:AddTag("not_hit_stunned")
 --    owner.components.inventory:SetOverflow(inst)
     inst.components.container:Open(owner)    
-    inst.wisptask = inst:DoPeriodicTask(0.1,function() spawnwisp(owner, inst) end)  
+    inst.wisptask = inst:DoPeriodicTask(0.1,function() spawnwisp(owner) end)  
 
     inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/crafted/vortex_armour/LP","vortex") 
     setsoundparam(inst)

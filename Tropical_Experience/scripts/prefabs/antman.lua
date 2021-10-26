@@ -429,7 +429,7 @@ local function common()
 	
     inst:ListenForEvent("beginaporkalypse", function() 
         if not inst:IsInLimbo() then
-            TransformToWarrior(inst, false)
+            TransformToWarrior(inst)
         end
     end, TheWorld)
     

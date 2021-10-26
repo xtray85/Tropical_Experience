@@ -85,7 +85,7 @@ end
 
 local function ontakefuelfn(inst)
   --  inst.SoundEmitter:PlaySound("dontstarve_DLC001/common/machine_fuel")
-  updateAnim(inst,inst.components.fueled:GetCurrentSection())
+  updateAnim(inst)
 end
 
 
@@ -146,7 +146,7 @@ local function fn(Sim)
                     inst.components.burnable:Extinguish() 
                 end            
             else
-                updateAnim(inst,section)
+                updateAnim(inst)
             end
         end)  
 	inst.components.fueled.fueltype = "TAR"		

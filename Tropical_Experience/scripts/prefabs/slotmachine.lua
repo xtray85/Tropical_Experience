@@ -64,8 +64,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -118,10 +116,7 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
-
 		},
 
 	},
@@ -147,8 +142,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -173,10 +166,7 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
-
 		},
 
 			chance_loot =
@@ -222,8 +212,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -255,8 +243,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -287,8 +273,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -319,8 +303,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -352,8 +334,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -387,8 +367,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -422,8 +400,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -456,8 +432,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -492,8 +466,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		}
@@ -520,8 +492,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -555,8 +525,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -589,8 +557,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -623,8 +589,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -658,8 +622,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -692,8 +654,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -728,8 +688,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -764,8 +722,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		}
@@ -793,8 +749,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		}
@@ -822,8 +776,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -857,8 +809,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -891,8 +841,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -926,8 +874,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -962,8 +908,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		}
@@ -992,8 +936,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -1028,8 +970,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		}
@@ -1058,8 +998,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		}
@@ -1086,8 +1024,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -1122,8 +1058,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		}
@@ -1151,8 +1085,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -1184,8 +1116,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -1218,8 +1148,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -1251,8 +1179,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -1285,8 +1211,6 @@ local internalloot =
 			goldnugget = 1,
 			gears = 1,
 			purplegem = 1,
-			redgem =1,
-			bluegem =1,
 			rope =1,
 
 		},
@@ -2290,12 +2214,6 @@ local actions =
 	slot_monkeysurprise = { treasure = "slot_monkeysurprise", },
 	slot_poisonsnakes = { treasure = "slot_poisonsnakes", },
 	slot_hounds = { treasure = "slot_hounds", },
-
-
-				slot_snakeattack = { treasure = "slot_snakeattack", },
-					slot_snakeattack = { treasure = "slot_snakeattack", },
-						slot_snakeattack = { treasure = "slot_snakeattack", },
-
 }
 
 local sounds = 

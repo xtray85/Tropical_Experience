@@ -434,7 +434,7 @@ local function OnHammered(inst, worker)
 	inst.components.lootdropper:DropLoot()
 	SpawnPrefab("collapse_small").Transform:SetPosition(inst.Transform:GetWorldPosition())
 	inst.SoundEmitter:PlaySound("dontstarve/common/destroy_wood")
-	TurnOff(inst, true)
+	TurnOff(inst)
 	RetractPipes(inst)
 	inst:Remove()
 end

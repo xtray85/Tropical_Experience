@@ -198,7 +198,6 @@ return{
 		},
 		AXE = "A trusty companion in these environs.",
 		BABYBEEFALO = "You will fatten up nicely.",
-		BABYOX = "You will fatten up nicely, with some proper grazing.",
 		BACKPACK = "It has my back.",
 		BACONEGGS = "Runny eggs... crisp bacon... I could die happy now...",
 		BALLPHIN = "Chipper fellows.",
@@ -363,8 +362,6 @@ return{
 			GENERIC = "I wonder what is underneath that?",
 			OPEN = "Dare I?",
 		},
-		CAVE_EXIT = "Thank goodness.",
-		CAVE_ENTRANCE = "I wonder what is underneath that?",
         CAVE_ENTRANCE_RUINS = "What is within?",
        
        	CAVE_ENTRANCE_OPEN = 
@@ -1595,7 +1592,6 @@ return{
 		OXHAT = "Much more waterproof than a chef's hat.",
 		OX_FLUTE = "It plays a lilting tune.",
 		OX_HORN = "A lovely souvenir from a once powerful beast.",
-		PANDORASCHEST = "It's quite magnificent.",
 		PARROT_PIRATE = "Such an amiable creature. Friends?",
 		PEG_LEG = "Why on earth do I have this?",
 		PERD = "A fellow with excellent taste.",
@@ -1611,10 +1607,6 @@ return{
 			BURNT = "Nothing but ashes.",
 			GENERIC = "I won't even try to pronounce it...",
 		},
-
-		ROOK_NIGHTMARE = "What a monstrosity!",
-		RUBBLE = "Delicious destruction.",
-		RUINS_RUBBLE = "Delicious destruction.",
 		SAIL_STICK = "Might make a good stirring stick.",
 		SHADOWSKITTISH_WATER = "Oh dear.",
 		SHARKITTENSPAWNER =
@@ -1632,8 +1624,6 @@ return{
 		TRINKET_20 = "It looks expectant.",
 		TRINKET_21 = "I'm afraid I won't fit.",
 		TRINKET_22 = "Perfect for a candlelit dinner!",
-		TURF_CAVE = "It's like an ingredient for the ground.",
-		TURF_DECIDUOUS = "It's like an ingredient for the ground.",
 		TURF_FUNGUS_RED = "It's like an ingredient for the ground.",
 		TURF_MAGMAFIELD = "It's like an ingredient for the ground.",
 		TURF_ROAD = "It's like an ingredient for the ground.",

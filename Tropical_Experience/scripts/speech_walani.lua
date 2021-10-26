@@ -253,13 +253,6 @@ return {
 		BERMUDATRIANGLE = "Take me to a new surf spot!",
 		BERRIES = "These are the edible kind, right?",
 		BERRIES_COOKED = "They're all sticky now. Heh heh, gross.",
-		BERRYBUSH =
-		{
-			BARREN = "It needs a little love.",
-			GENERIC = "Awesome! That bush has berries!",
-			PICKED = "It's kinda just a regular bush now.",
-			WITHERED = "That bush isn't looking very good.",
-		},
 		BIOLUMINESCENCE = "Pretty glowy goop!",
 		BIRDCAGE =
 		{
@@ -1122,7 +1115,6 @@ return {
 			PICKED = "It needs time to unwind.",
 		},
 		BOAT = "The second best way to travel.",
-		BOATCANNON = "Shooting it into the water can make some pretty sweet waves.",
 		BONESHARD = "I don't think a cast will help now.",
 		BONESTEW = "It looks like a pretty hearty meal.",
 		BRAINJELLYHAT = "It's, like, blowing my mind!",
@@ -1212,7 +1204,6 @@ return {
 		EEL_COOKED = "I'm not gonna eat just an eel old thing!",
 		EGGPLANT = "I've never seen an egg that shade of purple.",
 		EGGPLANT_COOKED = "Is this, like, an omelette?",
-		FEATHER_ROBIN_WINTER = "I would love a necklace made of these.",
 		FISH = "Blub blub, little chum.",
 		FLOWER_CAVE = "I want a whole wreath of them!",
 		FLOWER_CAVE_DOUBLE = "I want a whole wreath of them!",
@@ -1624,7 +1615,6 @@ return {
         OXWOOL = "Thanks, ox-dude.",
         ENCRUSTEDBOAT = "Whatever floats my boat.",
         JUNGLETREEGUARD = "No way this is worth the effort!",
-        BABYOX = "Awww, you smell like garbage!",
         BALLPHINHOUSE = "Man, even their houses are cute.",
         DORSALFIN = "I thought I was the only one around here who'd fallen to pieces.",
         NUBBIN = "Heh. \"Nubbin.\"",

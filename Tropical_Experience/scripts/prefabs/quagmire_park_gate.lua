@@ -728,4 +728,4 @@ local function MakeWallPlacer(placer, placement, builds, isdoor)
 end
 
 return MakeWall("quagmire_park_gate", {wide = "quagmire_park_gate"}, true, "park_key"),
-	MakeWallAnim("quagmire_park_gate_anim", {wide = "quagmire_park_gate"}, true, "park_key")
+	MakeWallAnim("quagmire_park_gate_anim", {wide = "quagmire_park_gate"}, true)

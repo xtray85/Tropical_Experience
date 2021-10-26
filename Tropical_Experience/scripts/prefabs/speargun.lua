@@ -141,7 +141,7 @@ local function onequippoison(inst, owner)
 end
 
 local function poisonfn(Sim)
-    local inst = commonfn(Sim)
+    local inst = commonfn()
 
     inst.AnimState:SetBuild("speargun_poison")
     inst.AnimState:SetBank("speargun")
@@ -169,7 +169,7 @@ local function fireattack(inst, attacker, target)
 end
 
 local function obsidianfn(Sim)
-    local inst = commonfn(Sim)
+    local inst = commonfn()
 
     inst.entity:AddSoundEmitter()
 

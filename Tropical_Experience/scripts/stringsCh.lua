@@ -3199,7 +3199,6 @@ STRINGS.CITY_PIG_TALK_FIND_LIGHT = {
                                     pigman_mechanic = {"是黑暗！是恐惧！", "多么疯狂的谎言！",},
                                     pigman_mayor = {"朋友，小猪，非猪人，给我借个火。", "我的光在哪儿？"},
                                     pigman_royalguard = {"光明化为乌有！", "拿起武器！", "把光找回来！"},
-                                    pigman_royalguard = {"光明化为乌有！", "拿起武器！", "把光找回来！"},
                                     pigman_collector = {"什么地方有光？！", "我需要光明！",},
                                     pigman_banker = {"把光带回来！", "这是黑暗的谎言！"},
                                     pigman_florist = {"我受不了了，太黑了。！", "这是黑暗的谎言！",},

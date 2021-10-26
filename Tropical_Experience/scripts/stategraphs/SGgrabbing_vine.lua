@@ -68,14 +68,9 @@ local states=
         end,
         events=
         {
-            EventHandler("animqueueover", function(inst)  
-                inst.shadowoff(inst)
-            end),
-        },    
-        events=
-        {
+            EventHandler("animqueueover", function(inst) inst.shadowoff(inst) end),
             EventHandler("animover", function(inst) inst.sg:GoToState("idle_up") end),
-        },            
+        }            
     },
 
     

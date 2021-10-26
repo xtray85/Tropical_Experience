@@ -141,7 +141,7 @@ local states=
     },		
 
     State{
-        name = "chat"
+        name = "chat",
 		tags = {"chat", "busy"},
         onenter = function(inst)
 		    inst.AnimState:PlayAnimation("chat")
@@ -155,7 +155,7 @@ local states=
     },
 	
     State{
-        name = "boo"
+        name = "boo",
 		tags = {"chat", "busy"},
         onenter = function(inst)
 		    inst.AnimState:PlayAnimation("chat")

@@ -131,10 +131,10 @@ end
 local function GetReturnPos(inst)
     local rad = 2
     local pos = inst:GetPosition()
-    trace("GetReturnPos", inst, pos)
+    --trace("GetReturnPos", inst, pos)
     local angle = math.random()*2*PI
     pos = pos + Point(rad*math.cos(angle), 0, -rad*math.sin(angle))
-    trace("    ", pos)
+    --trace("    ", pos)
     return pos:Get()
 end
 
@@ -144,7 +144,7 @@ local function DoReturn(inst)
             if inst.components.homeseeker.home:IsAsleep() and not inst:IsNear(inst.components.homeseeker.home, HOME_TELEPORT_DIST) then
                 local x, y, z = GetReturnPos(inst.components.homeseeker.home)
                 inst.Physics:Teleport(x, y, z)
-                trace("hound warped home", x, y, z)
+                --trace("hound warped home", x, y, z)
             end
         elseif inst.components.homeseeker.home.components.childspawner then
             inst.components.homeseeker.home.components.childspawner:GoHome(inst)

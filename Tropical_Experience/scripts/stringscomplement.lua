@@ -2164,7 +2164,6 @@ STRINGS.CITY_PIG_TALK_FIND_LIGHT = {
                                     pigman_mechanic = {"IS'T DARK! IS'T SCARY!", "THAT WAY MADNESS LIES!",},
                                     pigman_mayor = {"FRIENDS, PIGGIES, UNPIGMEN, LEND ME YOUR LIGHT!", "WHEREFORE ART MINE LIGHT?"},
                                     pigman_royalguard = {"TAKE NAUGHT THE LIGHT!", "TAKE ARMS!", "ONCE MORE UNTO THE LIGHT!"},
-                                    pigman_royalguard = {"TAKE NAUGHT THE LIGHT!", "TAKE ARMS!", "ONCE MORE UNTO THE LIGHT!"},
                                     pigman_collector = {"WHEREFORE ART THE LIGHT?!", "I NEED'ST LIGHT!",},
                                     pigman_banker = {"BRINGETH BACK THE LIGHT!", "THIS WAY DARKNESS LIES!"},
                                     pigman_florist = {"I AM TOO MUCH I' THE DARK!", "THIS WAY DARKNESS LIES!",},

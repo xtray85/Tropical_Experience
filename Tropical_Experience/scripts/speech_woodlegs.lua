@@ -1613,7 +1613,6 @@ return
 	--- 5C DLC ------------------------------------------------------------------------------------------------
 
         ENCRUSTEDBOAT = "A vessel'o th'sea, t'be sure.",
-        BABYOX = "Ye ain'tna land lubber, is ya? Nah!",
         BALLPHINHOUSE = "They be at home on th'sea, jus' like ol'Woodlegs!",
         DORSALFIN = "Th'fin o'a sea beast.",
         NUBBIN = "N'ta hair t'be seen.",

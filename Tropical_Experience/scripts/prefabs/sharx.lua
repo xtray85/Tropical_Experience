@@ -168,7 +168,7 @@ local function fncommon()
 end
 
 local function fndefault()
-	local inst = fncommon(Sim)
+	local inst = fncommon()
 	
     --MakeMediumFreezableCharacter(inst, "hound_body")
     --MakeMediumBurnableCharacter(inst, "hound_body")

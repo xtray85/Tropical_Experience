@@ -679,11 +679,7 @@ local LIGHTS =
     { 
         day  = {radius = 3, intensity = 0.75, falloff = 0.5, color = {1, 1, 1}},
         dusk = {radius = 2, intensity = 0.75, falloff = 0.5, color = {1/1.8, 1/1.8, 1/1.8}},
-        full = {radius = 2, intensity = 0.75, falloff = 0.5, color = {0.8/1.8, 0.8/1.8, 1/1.8}}
-    },
-
-    SUNBEAM =
-    { 
+        full = {radius = 2, intensity = 0.75, falloff = 0.5, color = {0.8/1.8, 0.8/1.8, 1/1.8}},
         intensity = 0.9,
         color     = {197/255, 197/255, 50/255},
         falloff   = 0.5,

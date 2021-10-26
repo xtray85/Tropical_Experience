@@ -6366,7 +6366,6 @@ AddCookerRecipeForCookers(
 		health = 0,
 		hunger = 0,
 		sanity = 0,
-		perishtime = TUNING.PERISH_SLOW,
 		cookers = {"grill", "oven", "pot", "pot_syrup"},
 		tags = {},
 	},

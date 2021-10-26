@@ -61,7 +61,6 @@ local NAUGHTY_VALUE =
     ["hippopotamoose"] = 4,
     ["mandrakeman"] = 3,
     ["peagawk"] = 3,
-    ["piko_orange"] = 2,
     ["zeb"] = 2,
     ["chicken"] = 3,		
 }

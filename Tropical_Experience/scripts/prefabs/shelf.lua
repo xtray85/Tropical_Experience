@@ -326,7 +326,7 @@ local function common(setsize,swp_img_list, locked, physics_round)
             setPlayerUncraftable(inst)
         end
 
-        spawnchildren(inst,locked) 
+        spawnchildren(inst) 
         if locked and not inst.destrancado then
                 lock(inst)
             else
@@ -688,7 +688,7 @@ local escolha =
             setPlayerUncraftable(inst)
         end
 
-        spawnchildren(inst,nil) 
+        spawnchildren(inst) 
         unlock(inst)
 
     end)

@@ -66,7 +66,7 @@ local function onequip(inst, owner)
 end
 
 local function onunequip(inst,owner) 
-	stop_sparks(inst, owner)
+	stop_sparks(inst)
     
     owner.components.combat.damage = owner.components.combat.defaultdamage --???
     owner.AnimState:Hide("ARM_carry") 

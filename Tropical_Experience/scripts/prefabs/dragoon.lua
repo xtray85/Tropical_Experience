@@ -74,10 +74,10 @@ end
 local function GetReturnPos(inst)
 	local rad = 2
 	local pos = inst:GetPosition()
-	trace("GetReturnPos", inst, pos)
+	--trace("GetReturnPos", inst, pos)
 	local angle = math.random()*2*PI
 	pos = pos + Point(rad*math.cos(angle), 0, -rad*math.sin(angle))
-	trace("    ", pos)
+	--trace("    ", pos)
 	return pos:Get()
 end
 
