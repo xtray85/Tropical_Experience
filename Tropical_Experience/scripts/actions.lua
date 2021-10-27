@@ -549,26 +549,22 @@ if equipamento and canhao then canhao.components.finiteuses:Use(1) end
 local bomba = SpawnPrefab("cannonshotobsidian")
 bomba.Transform:SetPosition(x, y+1.5, z)
 bomba.components.complexprojectile:Launch(pos)
-act.doer.SoundEmitter:PlaySound("dontstarve_DLC002/creatures/knight_steamboat/cannon")
 else
 if equipamento and canhao and act.doer.prefab ~= "woodlegs" then 
 canhao.components.finiteuses:Use(1)
 local bomba = SpawnPrefab("cannonshot")
 bomba.Transform:SetPosition(x, y+1.5, z)
 bomba.components.complexprojectile:Launch(pos)
-act.doer.SoundEmitter:PlaySound("dontstarve_DLC002/creatures/knight_steamboat/cannon")
 elseif equipamento and equipamento.prefab == "woodlegsboat" and canhao and act.doer.prefab == "woodlegs" then
 local bomba = SpawnPrefab("cannonshot")
 bomba.components.explosive.explosivedamage = 50
 bomba.Transform:SetPosition(x, y+1.5, z)
 bomba.components.complexprojectile:Launch(pos)
-act.doer.SoundEmitter:PlaySound("dontstarve_DLC002/creatures/knight_steamboat/cannon")
 elseif equipamento and canhao then 
 canhao.components.finiteuses:Use(1)
 local bomba = SpawnPrefab("cannonshot")
 bomba.Transform:SetPosition(x, y+1.5, z)
 bomba.components.complexprojectile:Launch(pos)
-act.doer.SoundEmitter:PlaySound("dontstarve_DLC002/creatures/knight_steamboat/cannon")
 end
 end
 
@@ -2140,12 +2136,6 @@ AddStategraphState(
         end,
         timeline = {
             GLOBAL.TimeEvent(
-                15 * GLOBAL.FRAMES,
-                function(inst)
-                    inst.SoundEmitter:PlaySound("dontstarve_DLC001/common/glommer_bell")
-                end
-            ),
-            GLOBAL.TimeEvent(
                 60 * GLOBAL.FRAMES,
                 function(inst)
                     inst:PerformBufferedAction()
@@ -2187,11 +2177,7 @@ local crop_dust =
         end,
 
         timeline =
-        {
-            GLOBAL.TimeEvent(10 * GLOBAL.FRAMES, function(inst)
-			inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/items/bugrepellent")
-            end),
-			
+        {	
             GLOBAL.TimeEvent(4 * GLOBAL.FRAMES, function(inst)
                 inst.sg:RemoveStateTag("busy")
             end),			
@@ -2506,20 +2492,7 @@ local pan =
     
         timeline=
         {
-            GLOBAL.TimeEvent(6*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/pool/pan") end), 
-            GLOBAL.TimeEvent(14*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/pool/pan") end), 
-
-            GLOBAL.TimeEvent((6+15)*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/pool/pan") end), 
-            GLOBAL.TimeEvent((14+15)*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/pool/pan") end), 
-
-            GLOBAL.TimeEvent((6+30)*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/pool/pan") end), 
-            GLOBAL.TimeEvent((14+30)*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/pool/pan") end), 
-
-            GLOBAL.TimeEvent((6+45)*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/pool/pan") end), 
-            GLOBAL.TimeEvent((14+45)*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/pool/pan") end),             
-
-            GLOBAL.TimeEvent((6+60)*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/pool/pan") end), 
-            GLOBAL.TimeEvent((14+60)*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/pool/pan") end),                         
+                                  
         },
 
   
@@ -2642,7 +2615,6 @@ local shearshear =
         timeline=
         {
             TimeEvent(4*GLOBAL.FRAMES, function(inst) 
-                inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/grass_tall/shears")
                 inst:PerformBufferedAction() 
             end),
 
@@ -3297,21 +3269,7 @@ local taploop =
         
         timeline=
         {
-            GLOBAL.TimeEvent(1*GLOBAL.FRAMES, function( inst )
-               inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/tamping_tool")
-            end),
-            GLOBAL.TimeEvent(8*GLOBAL.FRAMES, function( inst )
-               inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/tamping_tool")
-            end),            
-            GLOBAL.TimeEvent(16*GLOBAL.FRAMES, function( inst )
-               inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/tamping_tool")
-            end),       
-            GLOBAL.TimeEvent(24*GLOBAL.FRAMES, function( inst )
-               inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/tamping_tool")
-            end),       
-            GLOBAL.TimeEvent(32*GLOBAL.FRAMES, function( inst )
-               inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/harvested/tamping_tool")
-            end),                   
+                             
         },
         
         ontimeout= function(inst)
@@ -3406,9 +3364,6 @@ local function DoMountedFoleySounds(inst)
 end
 
 local DoRunSounds = function(inst)
-    if inst:HasTag("aquatic") then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/boat/padle")
-    end
     if inst.sg.mem.footsteps > 3 and not inst:HasTag("aquatic") then
         GLOBAL.PlayFootstep(inst, .6, true)
     else
@@ -3565,27 +3520,7 @@ local boatrun =
             inst.components.rowboatwakespawner:StartSpawning()
 			
 		local barco = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.BARCO)
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "ironwind" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/boatpropellor_lp", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "sail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_cloth", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "clothsail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_cloth", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "snakeskinsail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_snakeskin", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "feathersail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_feather", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "woodlegssail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_sealegs", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "malbatrossail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_sealegs", "sailmove" ) 
-		end		
+        		
 		
         end
 
@@ -4606,9 +4541,6 @@ local function DoMountedFoleySounds(inst)
 end
 
 local function DoRunSounds(inst)
-    if inst:HasTag("aquatic") then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/boat/padle")
-    end
     if inst.sg.mem.footsteps > 3 and not inst:HasTag("aquatic") then
         GLOBAL.PlayFootstep(inst, .6, true)
     else
@@ -4781,31 +4713,7 @@ local boatruncliente =
 --end
 
 if inst:HasTag("aquatic") and inst.components.rowboatwakespawner then
-inst.components.rowboatwakespawner:StartSpawning()
-
-		local barco = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.BARCO)
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "ironwind" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/boatpropellor_lp", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "sail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_cloth", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "clothsail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_cloth", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "snakeskinsail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_snakeskin", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "feathersail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_feather", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "woodlegssail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_sealegs", "sailmove" ) 
-		end
-        if barco and barco.replica.container and barco.replica.container:GetItemInSlot(1) and barco.replica.container:GetItemInSlot(1).prefab == "malbatrossail" then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/sail_LP_sealegs", "sailmove" ) 
-		end	
-
+    inst.components.rowboatwakespawner:StartSpawning()
 end
 
 local anim = GetRunStateAnim(inst)
@@ -5185,7 +5093,6 @@ local sneeze =
 			
             
             if inst.prefab ~= "wes" then
-				inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/sneeze")
 				inst.components.talker:Say(STRINGS.CHARACTERS.GENERIC.ANNOUNCE_SNEEZE)  
             end        
         end,
@@ -5294,12 +5201,9 @@ local speargunstate =
                 if not inst.sg.statemem.chained then
 				
                 if inst.components.combat:GetWeapon() and inst.components.combat:GetWeapon():HasTag("blunderbuss") then
-                    inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/items/weapon/blunderbuss_shoot")
                     local cloud = SpawnPrefab("cloudpuff")
                     local pt = Vector3(inst.Transform:GetWorldPosition())
                     cloud.Transform:SetPosition(pt.x,2,pt.z)
-                else
-                    inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/use_speargun")
                 end					
 				
                 end
@@ -5411,12 +5315,9 @@ local speargunstateclient =
                 if not inst.sg.statemem.chained then
 				
                 if inst.replica.combat:GetWeapon() and inst.replica.combat:GetWeapon():HasTag("blunderbuss") then
-                    inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/items/weapon/blunderbuss_shoot")
                     local cloud = SpawnPrefab("cloudpuff")
                     local pt = Vector3(inst.Transform:GetWorldPosition())
                     cloud.Transform:SetPosition(pt.x,2,pt.z)
-                else
-                    inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/use_speargun")
                 end					
 				
                 end
@@ -5518,7 +5419,7 @@ local telescopio = GLOBAL.State{
 
         timeline = 
         {
-            GLOBAL.TimeEvent(20*GLOBAL.FRAMES, function(inst) inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/use_spyglass") end),
+            
         },
 
         onexit = function(inst)
@@ -5634,7 +5535,6 @@ local macacorunstart = GLOBAL.State{
             inst.AnimState:SetBank("wilbur_run")
             inst.AnimState:SetBuild("wilbur_run")
             inst.AnimState:PlayAnimation("run_pre")
-            inst.SoundEmitter:PlaySound("dontstarve_DLC002/characters/wilbur/walktorun", "walktorun")
         end,
 
         onexit = function(inst)

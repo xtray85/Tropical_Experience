@@ -56,7 +56,6 @@ local HAM_FX =
 	    bank = "ground_breaking",
 	    build = "ground_chunks_breaking",
 	    anim = "idle",
-	    sound = "dontstarve_DLC003/creatures/palm_tree_guard/coconut_explode",
 	    tint = Vector3(183/255,143/255,85/255),
 	},
     {
@@ -115,7 +114,6 @@ local HAM_FX =
 	    name = "groundpound_fx_hulk",
 	    bank = "bearger_ground_fx",
 	    build = "bearger_ground_fx",
-	    sound = "dontstarve_DLC003/creatures/boss/hulk_metal_robot/dust",
     	anim = "idle",
 	    dlc = true,
     },    
@@ -153,8 +151,6 @@ local HAM_FX =
 	    bank = "shock_machines_fx",
 	    build = "shock_machines_fx",
 	    anim = "shock",
-	    --sound = "dontstarve_DLC002/creatures/palm_tree_guard/coconut_explode",
-
 	},
 	{
 	    name = "hacking_bamboo_fx",

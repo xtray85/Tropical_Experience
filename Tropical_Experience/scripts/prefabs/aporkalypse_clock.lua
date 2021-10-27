@@ -160,14 +160,7 @@ local function RemoveFromInteriorScene(inst)
 end
 
 local function onnear(inst)
-local aporkalypse = TheWorld.components.aporkalypse
-if aporkalypse and aporkalypse:IsActive() then
-
-
-else
-		inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/objects/aporkalypse_clock/totem_LP", "totem_sound")
-		inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/objects/aporkalypse_clock/base_LP", "base_sound")
-end		
+	local aporkalypse = TheWorld.components.aporkalypse
 end
 
 local function onfar(inst)
@@ -215,12 +208,6 @@ local function make_master_fn()
 		end
 
 		inst.SoundEmitter:KillSound("base_sound")
-		if inst.rewind_mult < 0 then
-			inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/objects/aporkalypse_clock/base_backwards_LP", "rewind_sound")
-		else
-			inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/objects/aporkalypse_clock/base_fast_LP", "rewind_sound")
-		end
-
 		inst.rewind = true
 	end
 
@@ -229,8 +216,6 @@ local function make_master_fn()
 			return
 		end
 		inst.SoundEmitter:KillSound("rewind_sound")
-		inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/objects/aporkalypse_clock/base_LP", "base_sound")
-
 		inst.rewind = false
 	end
 
@@ -283,7 +268,6 @@ local function make_master_fn()
 		playclockanimation("on")
 		inst.SoundEmitter:KillSound("totem_sound")
 		inst.SoundEmitter:KillSound("base_sound")
-		inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/objects/stone_door/close")
 --		TheCamera:Shake("FULL", 0.7, 0.02, .5, 40)
 
 		inst.AnimState:PushAnimation("idle_pst", false)
@@ -311,7 +295,6 @@ end
 
 local function on_pressure_plate_near(inst)
     if not inst:HasTag("INTERIOR_LIMBO") and not inst.down then
-        inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/items/pressure_plate/hit")
         inst.AnimState:PlayAnimation("popdown")
         inst.AnimState:PushAnimation("down_idle")
         inst.down = true

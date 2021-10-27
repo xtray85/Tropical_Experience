@@ -5,9 +5,6 @@ local assets =
 }
 
 local function OnBlocked(owner, data) 
-        if owner.SoundEmitter ~= nil then
-            owner.SoundEmitter:PlaySound("dontstarve_DLC002/common/armour/obsidian")
-        end
     if (data.weapon == nil or (not data.weapon:HasTag("projectile") and data.weapon.projectile == nil))
         and data.attacker and data.attacker.components.burnable 
         and (data.attacker.components.combat == nil or (data.attacker.components.combat.defaultdamage > 0)) then
@@ -48,8 +45,6 @@ local function fn()
     inst.AnimState:SetBank("armor_obsidian")
     inst.AnimState:SetBuild("armor_obsidian")
     inst.AnimState:PlayAnimation("anim")
-
-    inst.foleysound = "dontstarve_DLC002/common/foley/obsidian_armour"
 
 	MakeInventoryFloatable(inst)
 	

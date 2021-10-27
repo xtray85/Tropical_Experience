@@ -440,9 +440,6 @@ function Segmented:OnUpdate( dt )
 								scale = math.max(scale - SCALE_VEL, segment.scalegoal )
 							else
 								scale = math.min(scale + SCALE_VEL, segment.scalegoal )
-								if scale == segment.scalegoal then
-									segment.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/boss/pugalisk/scales")
-								end
 							end							
 						end	
 						if scale then

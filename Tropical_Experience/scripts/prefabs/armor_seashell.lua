@@ -8,7 +8,7 @@ local ARMORSEASHELL = wilson_health * 5
 local ARMORSEASHELL_ABSORPTION = 0.75
 
 local function OnBlocked(owner) 
-    owner.SoundEmitter:PlaySound("dontstarve_DLC002/common/armour/shell")
+    
 end
 
 local function onequip(inst, owner) 
@@ -35,8 +35,6 @@ local function fn()
     inst.AnimState:SetBank("armor_seashell")
     inst.AnimState:SetBuild("armor_seashell")
     inst.AnimState:PlayAnimation("anim")
-
-    inst.foleysound = "dontstarve_DLC002/common/foley/seashell_suit"
 	
 	MakeInventoryFloatable(inst)
 	

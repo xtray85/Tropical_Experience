@@ -525,7 +525,6 @@ local function spawnbarrier(inst,pt)
             TheWorld:DoTaskInTime(math.random()*0.3, function()            
                 local rock = SpawnPrefab("rock_basalt")
                 rock.AnimState:PlayAnimation("emerge")
-                inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/boss/hulk_metal_robot/rock")
                 rock.AnimState:PushAnimation("full")
 
                 rock.Transform:SetPosition(newpt.x,newpt.y,newpt.z)
@@ -683,7 +682,6 @@ local function fn(Sim)
     inst.components.combat:SetAttackPeriod(TUNING.BEARGER_ATTACK_PERIOD)
     inst.components.combat:SetRetargetFunction(3, RetargetFn)
     inst.components.combat:SetKeepTargetFunction(KeepTargetFn)
-    --inst.components.combat:SetHurtSound("dontstarve_DLC001/creatures/bearger/hurt")
     inst:ListenForEvent("killed", function(inst, data)
         if inst.components.combat and data and data.victim == inst.components.combat.target then
             inst.components.combat.target = nil
@@ -756,9 +754,7 @@ end
 
 local function OnHit(inst, dist)    
     inst.AnimState:PlayAnimation("land")
-    inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/enemy/metal_robot/ribs/step_wires")
     inst.AnimState:PushAnimation("open")
-    inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/boss/hulk_metal_robot/rust")    
     inst:ListenForEvent("animover", function() 
         if inst.AnimState:IsCurrentAnimation("open") then
             inst.primed  = true
@@ -779,8 +775,6 @@ local function onnearmine(inst, ents)
         inst.SetLightValue(inst, 0,0.75,0.2 )
         inst.AnimState:PlayAnimation("red_loop", true)
         --start beep
-        inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/boss/hulk_metal_robot/active_LP","boom_loop")
-        inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/enemy/metal_robot/electro")
         inst:DoTaskInTime(0.8,function() 
             --explode, end beep
         inst.SoundEmitter:KillSound("boom_loop")
@@ -794,8 +788,7 @@ local function onnearmine(inst, ents)
             inst:DoTaskInTime(0.3,function() DoDamage(inst, 3.5) inst:Remove() end)    
             
             local explosion = SpawnPrefab("laser_explosion")
-            explosion.Transform:SetPosition(inst.Transform:GetWorldPosition())
-            inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/enemy/metal_robot/smash")                          
+            explosion.Transform:SetPosition(inst.Transform:GetWorldPosition())                     
         end)
     end
 end
@@ -866,8 +859,7 @@ local function OnHitOrb(inst, dist)
     end)
     local ring = SpawnPrefab("laser_ring")
     ring.Transform:SetPosition(inst.Transform:GetWorldPosition())     
-    inst:DoTaskInTime(0.3,function() DoDamage(inst, 3.5) end)
-    inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/enemy/metal_robot/smash")    
+    inst:DoTaskInTime(0.3,function() DoDamage(inst, 3.5) end) 
 end
 
 local function orbfn(Sim)
@@ -995,8 +987,7 @@ local function OnCollidecharge(inst,other)
     end)
     local ring = SpawnPrefab("laser_ring")
     ring.Transform:SetPosition(inst.Transform:GetWorldPosition())     
-    inst:DoTaskInTime(0.3,function() DoDamage(inst, 3.5) end)
-    inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/enemy/metal_robot/smash")     
+    inst:DoTaskInTime(0.3,function() DoDamage(inst, 3.5) end)  
 end
 
 local function orbchargefn(Sim)

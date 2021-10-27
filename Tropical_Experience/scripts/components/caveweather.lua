@@ -199,7 +199,6 @@ local function DoTreeRainSound(inst, soundemitter)
     --Intentionally (lazy) not caring if we kill a sound that isn't still playing.
     --Log spams should also be disabled for that.
     soundemitter:KillSound("treerainsound")
-    soundemitter:PlaySound("dontstarve_DLC001/common/rain_on_tree", "treerainsound")
 end
 
 local function StartTreeRainSound()

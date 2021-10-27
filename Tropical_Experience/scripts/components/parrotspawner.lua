@@ -489,10 +489,6 @@ function SpawnWavesSW(inst, numWaves, totalAngle, waveSpeed, wavePrefab, initial
 	        if instantActive then
 	        	wave.sg:GoToState("idle")
 	        end
-
-	        if wave.soundtidal then
---	        	wave.SoundEmitter:PlaySound("dontstarve_DLC002/common/rogue_waves/"..wave.soundtidal)
-	        end
 --        else
 --        	wave:Remove()
 --        end

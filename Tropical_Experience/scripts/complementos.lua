@@ -41,36 +41,15 @@ AddModCharacter("walani", "FEMALE")
 AddModCharacter("wilbur", "NEUTRAL")
 AddModCharacter("woodlegs", "MALE")
 
-RemapSoundEvent( "dontstarve/characters/walani/talk_LP", "dontstarve_DLC002/characters/walani/talk_LP" )
-RemapSoundEvent( "dontstarve/characters/walani/ghost_LP", "dontstarve_DLC002/characters/walani/ghost_LP" )
-RemapSoundEvent( "dontstarve/characters/walani/hurt", "dontstarve_DLC002/characters/walani/hurt" )
-RemapSoundEvent( "dontstarve/characters/walani/death_voice", "dontstarve_DLC002/characters/walani/death_voice" )
-RemapSoundEvent( "dontstarve/characters/walani/emote", "dontstarve_DLC002/characters/walani/emote" )
 RemapSoundEvent( "dontstarve/characters/walani/yawn", "sw_character/characters/walani/yawn" )
-RemapSoundEvent( "dontstarve/characters/walani/eye_rub_vo", "dontstarve_DLC002/characters/walani/eye_rub_vo" )
-RemapSoundEvent( "dontstarve/characters/walani/pose", "dontstarve_DLC002/characters/walani/pose" )
 RemapSoundEvent( "dontstarve/characters/walani/carol", "sw_character/characters/walani/carol" )
 RemapSoundEvent( "dontstarve/characters/walani/sleepy", "sw_character/characters/walani/sleepy" )
 
-RemapSoundEvent( "dontstarve/characters/wilbur/talk_LP", "dontstarve_DLC002/characters/wilbur/talk_LP" )
-RemapSoundEvent( "dontstarve/characters/wilbur/ghost_LP", "dontstarve_DLC002/characters/wilbur/ghost_LP" )
-RemapSoundEvent( "dontstarve/characters/wilbur/hurt", "dontstarve_DLC002/characters/wilbur/hurt" )
-RemapSoundEvent( "dontstarve/characters/wilbur/death_voice", "dontstarve_DLC002/characters/wilbur/death_voice" )
-RemapSoundEvent( "dontstarve/characters/wilbur/emote", "dontstarve_DLC002/characters/wilbur/emote" )
 RemapSoundEvent( "dontstarve/characters/wilbur/yawn", "sw_character/characters/wilbur/yawn" )
-RemapSoundEvent( "dontstarve/characters/wilbur/eye_rub_vo", "dontstarve_DLC002/characters/wilbur/eye_rub_vo" )
-RemapSoundEvent( "dontstarve/characters/wilbur/pose", "dontstarve_DLC002/characters/wilbur/pose" )
 RemapSoundEvent( "dontstarve/characters/wilbur/carol", "sw_character/characters/wilbur/carol" )
 RemapSoundEvent( "dontstarve/characters/wilbur/sleepy", "sw_character/characters/wilbur/sleepy" )
 
-RemapSoundEvent( "dontstarve/characters/woodlegs/talk_LP", "dontstarve_DLC002/characters/woodlegs/talk_LP" )
-RemapSoundEvent( "dontstarve/characters/woodlegs/ghost_LP", "dontstarve_DLC002/characters/woodlegs/ghost_LP" )
-RemapSoundEvent( "dontstarve/characters/woodlegs/hurt", "dontstarve_DLC002/characters/woodlegs/hurt" )
-RemapSoundEvent( "dontstarve/characters/woodlegs/death_voice", "dontstarve_DLC002/characters/woodlegs/death_voice" )
-RemapSoundEvent( "dontstarve/characters/woodlegs/emote", "dontstarve_DLC002/characters/woodlegs/emote" )
 RemapSoundEvent( "dontstarve/characters/woodlegs/yawn", "sw_character/characters/woodlegs/yawn" )
-RemapSoundEvent( "dontstarve/characters/woodlegs/eye_rub_vo", "dontstarve_DLC002/characters/woodlegs/eye_rub_vo" )
-RemapSoundEvent( "dontstarve/characters/woodlegs/pose", "dontstarve_DLC002/characters/woodlegs/pose" )
 RemapSoundEvent( "dontstarve/characters/woodlegs/carol", "sw_character/characters/woodlegs/carol" )
 RemapSoundEvent( "dontstarve/characters/woodlegs/sleepy", "sw_character/characters/woodlegs/sleepy" )
  
@@ -132,22 +111,6 @@ TUNING.STARTING_ITEM_IMAGE_OVERRIDE["surfboarditem"] = {
 }
 
 AddIngredientValues({"butterfly_tropical_wings"}, {veggie=0.5}, true, false)
-
---if GetModConfigData("musica") == true then
---RemapSoundEvent( "dontstarve/music/music_work", "tropical/music/music_work")
---RemapSoundEvent( "dontstarve/music/music_work_winter", "tropical/music/music_work_winter")
---RemapSoundEvent( "dontstarve_DLC001/music/music_work_spring", "tropical/music/music_work_spring")
---RemapSoundEvent( "dontstarve_DLC001/music/music_work_summer", "tropical/music/music_work_summer")
---RemapSoundEvent( "dontstarve/music/music_epicfight", "tropical/music/music_epicfight")
---RemapSoundEvent( "dontstarve/music/music_epicfight_winter",  "tropical/music/music_epicfight_winter")
---RemapSoundEvent( "dontstarve_DLC001/music/music_epicfight_spring", "tropical/music/music_epicfight_spring")
---RemapSoundEvent( "dontstarve_DLC001/music/music_epicfight_summer", "tropical/music/music_epicfight_summer")
---RemapSoundEvent( "dontstarve/music/music_danger", "tropical/music/music_danger")
---RemapSoundEvent( "dontstarve/music/music_danger_winter", "tropical/music/music_danger_winter")
---RemapSoundEvent( "dontstarve_DLC001/music/music_danger_spring", "tropical/music/music_danger_spring")
---RemapSoundEvent( "dontstarve_DLC001/music/music_danger_summer", "tropical/music/music_danger_summer")
---end
-
 
 AddModRPCHandler("volcanomod", "quest1", function(inst)
 local portalinvoca1 = GLOBAL.SpawnPrefab("log")

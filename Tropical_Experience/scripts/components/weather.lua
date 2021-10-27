@@ -258,7 +258,6 @@ end
 local function StartTreeRainSound(intensity)
     if not _treerainsound then
         _treerainsound = true
-        TheFocalPoint.SoundEmitter:PlaySound("dontstarve_DLC001/common/rain_on_tree", "treerainsound")
     end
     TheFocalPoint.SoundEmitter:SetParameter("treerainsound", "intensity", intensity)
 end

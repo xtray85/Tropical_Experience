@@ -27,7 +27,7 @@ local function fn(Sim)
     inst.AnimState:SetBank("armor_lifejacket")
     inst.AnimState:SetBuild("armor_lifejacket")
     inst.AnimState:PlayAnimation("anim")
-    inst.foleysound = "dontstarve_DLC002/common/foley/life_jacket"
+
 	MakeInventoryFloatable(inst)
 
     inst.entity:SetPristine()

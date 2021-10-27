@@ -37,7 +37,7 @@ local ANTMAN_WARRIOR_RELEASE_TIME = 34
 local ANTMAN_WARRIOR_ATTACK_ON_SIGHT_DIST = 8
 
 local function ontalk(inst, script)
-	inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/crickant/abandon")
+	
 end
 
 local function OnAttackedByDecidRoot(inst, attacker)

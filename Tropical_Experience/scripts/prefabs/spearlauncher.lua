@@ -64,7 +64,7 @@ local function OnTakeAmmo(inst, data)
 	if not ammo then return end
 	local speartype = _spears[ammo.prefab] or "spear"
 
-    inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/items/weapon/speargun_load")
+    --inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/items/weapon/speargun_load")
 
 	inst.components.trader.enabled = false
 	--Set up as projectile thrower instead of crummy bat

@@ -710,9 +710,12 @@ Assets = { -- Asset("SOUNDPACKAGE", "sound/volcano.fev"),
 -- Asset("SOUND", "sound/slot_machine.fsb"),
 -- Asset("SOUND", "sound/waves.fsb"),
 -- LOD SOUND FILE
-Asset("SOUNDPACKAGE", "sound/dontstarve_DLC002.fev"), Asset("SOUNDPACKAGE", "sound/sw_character.fev"),
-Asset("SOUND", "sound/dontstarve_shipwreckedSFX.fsb"), Asset("SOUND", "sound/sw_character.fsb"),
-Asset("SOUNDPACKAGE", "sound/dontstarve_DLC003.fev"), Asset("SOUND", "sound/DLC003_sfx.fsb"),
+Asset("SOUNDPACKAGE", "sound/dontstarve_DLC002.fev"), 
+Asset("SOUNDPACKAGE", "sound/sw_character.fev"),
+Asset("SOUND", "sound/dontstarve_shipwreckedSFX.fsb"), 
+Asset("SOUND", "sound/sw_character.fsb"),
+Asset("SOUNDPACKAGE", "sound/dontstarve_DLC003.fev"), 
+Asset("SOUND", "sound/DLC003_sfx.fsb"),
 -- Asset("SOUND", "sound/amb_stream_SW.fsb"),
 -- NEW SOUND FILE
 -- Asset("SOUNDPACKAGE", "sound/volcano_new.fev"),
@@ -723,18 +726,31 @@ Asset("SOUNDPACKAGE", "sound/dontstarve_DLC003.fev"), Asset("SOUND", "sound/DLC0
 Asset("IMAGE", "images/barco.tex"), Asset("ATLAS", "images/barco.xml"),
 
 Asset("ATLAS", "images/inventoryimages/volcanoinventory.xml"),
-Asset("IMAGE", "images/inventoryimages/volcanoinventory.tex"), Asset("ATLAS", "images/inventoryimages/novositens.xml"),
-Asset("IMAGE", "images/inventoryimages/novositens.tex"), Asset("ANIM", "anim/player_actions_paddle.zip"),
-Asset("ANIM", "anim/player_actions_speargun.zip"), Asset("ANIM", "anim/player_actions_tap.zip"),
-Asset("ANIM", "anim/player_actions_panning.zip"), Asset("ANIM", "anim/player_actions_hand_lens.zip"),
-Asset("ANIM", "anim/walani_paddle.zip"), Asset("ANIM", "anim/player_boat_death.zip"),
-Asset("ANIM", "anim/player_sneeze.zip"), Asset("ANIM", "anim/des_sail.zip"),
-Asset("ANIM", "anim/player_actions_trawl.zip"), Asset("ANIM", "anim/player_actions_machete.zip"),
-Asset("ANIM", "anim/player_actions_shear.zip"), Asset("ANIM", "anim/player_actions_cropdust.zip"),
-Asset("ANIM", "anim/ripple_build.zip"), Asset("ATLAS", "images/fx4te.xml"), Asset("IMAGE", "images/fx4te.tex"),
-Asset("ANIM", "anim/boat_health.zip"), Asset("ANIM", "anim/player_actions_telescope.zip"),
-Asset("ANIM", "anim/pig_house_old.zip"), Asset("ANIM", "anim/parrot_pirate_intro.zip"),
-Asset("ANIM", "anim/parrot_pirate.zip"), Asset("ANIM", "anim/pig_house_sale.zip"), Asset("ANIM", "anim/fish2.zip"),
+Asset("IMAGE", "images/inventoryimages/volcanoinventory.tex"), 
+Asset("ATLAS", "images/inventoryimages/novositens.xml"),
+Asset("IMAGE", "images/inventoryimages/novositens.tex"), 
+Asset("ANIM", "anim/player_actions_paddle.zip"),
+Asset("ANIM", "anim/player_actions_speargun.zip"), 
+Asset("ANIM", "anim/player_actions_tap.zip"),
+Asset("ANIM", "anim/player_actions_panning.zip"), 
+Asset("ANIM", "anim/player_actions_hand_lens.zip"),
+Asset("ANIM", "anim/walani_paddle.zip"), 
+Asset("ANIM", "anim/player_boat_death.zip"),
+Asset("ANIM", "anim/player_sneeze.zip"), 
+Asset("ANIM", "anim/des_sail.zip"),
+Asset("ANIM", "anim/player_actions_trawl.zip"), 
+Asset("ANIM", "anim/player_actions_machete.zip"),
+Asset("ANIM", "anim/player_actions_shear.zip"), 
+Asset("ANIM", "anim/player_actions_cropdust.zip"),
+Asset("ANIM", "anim/ripple_build.zip"), 
+Asset("ATLAS", "images/fx4te.xml"), 
+Asset("IMAGE", "images/fx4te.tex"),
+Asset("ANIM", "anim/boat_health.zip"), 
+Asset("ANIM", "anim/player_actions_telescope.zip"),
+Asset("ANIM", "anim/pig_house_old.zip"), 
+Asset("ANIM", "anim/parrot_pirate_intro.zip"),
+Asset("ANIM", "anim/parrot_pirate.zip"), 
+Asset("ANIM", "anim/pig_house_sale.zip"), Asset("ANIM", "anim/fish2.zip"),
 Asset("ANIM", "anim/fish3.zip"), Asset("ANIM", "anim/fish4.zip"), Asset("ANIM", "anim/fish5.zip"),
 Asset("ANIM", "anim/fish6.zip"), Asset("ANIM", "anim/fish7.zip"), Asset("ANIM", "anim/coi.zip"),
 Asset("ANIM", "anim/ballphinocean.zip"), Asset("ANIM", "anim/dogfishocean.zip"), Asset("ANIM", "anim/goldfish.zip"),
@@ -5768,9 +5784,6 @@ local function OnDirtyEventCameraStuff(inst) -- this is called on client, if the
         GLOBAL.TheCamera:SetTarget(GLOBAL.GetClosestInstWithTag("shopinterior", inst, 30))
         GLOBAL.TheCamera.targetoffset = Vector3(2, 1.5, 0)
         GLOBAL.TheWorld:PushEvent("underwatercave", "night")
-        if not GLOBAL.GetClosestInstWithTag("casadojogador", inst, 30) then
-            GLOBAL.TheFocalPoint.SoundEmitter:PlaySound("dontstarve_DLC003/amb/inside/store", "storemusic")
-        end
     elseif val == 5 then -- for player prox 
         GLOBAL.TheCamera.controllable = false
         GLOBAL.TheCamera.cutscene = true
@@ -5783,7 +5796,6 @@ local function OnDirtyEventCameraStuff(inst) -- this is called on client, if the
             GLOBAL.TheCamera.distancetarget = 25 + GetModConfigData("housewallajust")
             GLOBAL.TheCamera.targetoffset = Vector3(6, 1.5, 0)
             GLOBAL.TheWorld:PushEvent("underwatercave", "night")
-            GLOBAL.TheFocalPoint.SoundEmitter:PlaySound("dontstarve_DLC003/amb/inside/ruins", "storemusic")
         elseif alvodacamera and alvodacamera:HasTag("pisogalleryinteriorpalace") then
             GLOBAL.TheCamera.distancetarget = 21.5 + GetModConfigData("housewallajust")
             GLOBAL.TheCamera.targetoffset = Vector3(3, 1.5, 0)

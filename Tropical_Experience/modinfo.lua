@@ -1,7 +1,7 @@
 name = "Tropical Experience Return of Them (fixed)"
 description = "Fixes and cleanup"
 author = "xTray"
-version = "2.67"
+version = "2.67.2"
 forumthread = ""
 api_version = 10
 priority = -20

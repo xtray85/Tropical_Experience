@@ -96,7 +96,6 @@ function BigFooter:FootStep(pos)
 			foot:DoTaskInTime(10 * FRAMES, function() foot:StartStep() end)
 		end
 	else
-		foot.SoundEmitter:PlaySound("dontstarve_DLC001/creatures/glommer/foot_water")
 		foot:Remove()
 	end
 end

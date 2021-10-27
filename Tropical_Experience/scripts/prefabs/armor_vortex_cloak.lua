@@ -24,7 +24,6 @@ end
 
 local function onequip(inst, owner) 
     owner.AnimState:OverrideSymbol("swap_body", "armor_vortex_cloak", "swap_body")
-    owner.SoundEmitter:PlaySound("dontstarve_DLC003/common/crafted/vortex_armour/equip_off")
     local function OnBlocked()
         if inst.components.armor.condition and inst.components.armor.condition > 0 then
             owner:AddChild(SpawnPrefab("vortex_cloak_fx"))                    
@@ -39,8 +38,6 @@ local function onequip(inst, owner)
 --    owner.components.inventory:SetOverflow(inst)
     inst.components.container:Open(owner)    
     inst.wisptask = inst:DoPeriodicTask(0.1,function() spawnwisp(owner) end)  
-
-    inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/crafted/vortex_armour/LP","vortex") 
     setsoundparam(inst)
 end
 
@@ -71,7 +68,6 @@ local function ontakefuel(inst)
 	local player = inst.components.inventoryitem.owner
 	if player then 
     player.components.sanity:DoDelta(-TUNING.SANITY_TINY)
-    player.SoundEmitter:PlaySound("dontstarve_DLC003/common/crafted/vortex_armour/add_fuel")
 	end	
 end
 

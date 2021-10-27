@@ -1433,7 +1433,6 @@ local function settimechange(inst)
 end
 
 local function opendoor(inst, instant)
-	inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/objects/stone_door/slide")
 	if inst.prefab == "pig_ruins_door_cima" then
 	inst.AnimState:PlayAnimation("north_open")
 	inst.AnimState:PushAnimation("north")	
@@ -1456,7 +1455,6 @@ local function opendoor(inst, instant)
 end
 
 local function closedoor(inst, instant)
-	inst.SoundEmitter:PlaySound("dontstarve_DLC003/common/objects/stone_door/close")
 	if inst.prefab == "pig_ruins_door_cima" then
 	inst.AnimState:PlayAnimation("north_shut")
 	inst.AnimState:PushAnimation("north_closed")	

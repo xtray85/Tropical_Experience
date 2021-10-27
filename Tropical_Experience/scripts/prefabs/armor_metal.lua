@@ -36,8 +36,6 @@ local function fn(Sim)
     inst.AnimState:PlayAnimation("anim")
     
     inst:AddTag("metal")
-	
-    inst.foleysound = "dontstarve_DLC003/movement/iron_armor/foley_player"
 
 	MakeInventoryFloatable(inst)
   

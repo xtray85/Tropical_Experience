@@ -58,11 +58,6 @@ end
 
 
 local function ontalk(inst, script)
---    if inst.is_complete_disguise(ThePlayer) then
---        inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/crickant/pick_up")
---    else
-	   inst.SoundEmitter:PlaySound("dontstarve_DLC003/creatures/crickant/abandon")
---    end
 end
 
 local function SpringMod(amt)

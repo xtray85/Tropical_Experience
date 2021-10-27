@@ -31,8 +31,6 @@ local function fn()
     inst.AnimState:SetBuild("armor_snakeskin")
     inst.AnimState:PlayAnimation("anim")
 	
-    inst.foleysound = "dontstarve_DLC002/common/foley/snakeskin_jacket"
-	
 	MakeInventoryFloatable(inst)
 	
 	inst.entity:SetPristine()

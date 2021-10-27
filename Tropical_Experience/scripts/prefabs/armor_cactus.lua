@@ -14,9 +14,6 @@ local function OnBlocked(owner, data)
 		and (data.attacker.components.combat == nil or (data.attacker.components.combat.defaultdamage > 0)) then
 		
 		data.attacker.components.combat:GetAttacked(owner, ARMORCACTUS_DMG, nil, "thorns")
-		if owner.SoundEmitter ~= nil then
-            owner.SoundEmitter:PlaySound("dontstarve_DLC002/common/armour/cactus")
-        end
 	end
 end
 
@@ -51,8 +48,6 @@ local function fn()
 	inst.AnimState:SetBank("armor_cactus")
 	inst.AnimState:SetBuild("armor_cactus")
 	inst.AnimState:PlayAnimation("anim")
-	
-	inst.foleysound = "dontstarve_DLC002/common/foley/cactus_armour"
 
 	MakeInventoryFloatable(inst)
 
