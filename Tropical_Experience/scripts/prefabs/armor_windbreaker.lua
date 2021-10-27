@@ -25,8 +25,6 @@ local function fn()
     inst.AnimState:SetBank("armor_windbreaker")
     inst.AnimState:SetBuild("armor_windbreaker")
     
-	inst.foleysound = "dontstarve_DLC002/common/foley/windbreaker"
-    
 	MakeInventoryPhysics(inst)
     MakeInventoryFloatable(inst)
     

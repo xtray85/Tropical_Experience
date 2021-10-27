@@ -43,7 +43,6 @@ end
 
 local function onunequip(inst, owner) 
     owner.AnimState:ClearOverrideSymbol("swap_body")
-    owner.SoundEmitter:PlaySound("dontstarve_DLC003/common/crafted/vortex_armour/equip_on") 
     inst:RemoveEventCallback("armorhit", inst.OnBlocked)
     owner:RemoveTag("not_hit_stunned")
 --    owner.components.inventory:SetOverflow(nil)
@@ -100,8 +99,7 @@ local function fn()
 	inst.components.inventoryitem.atlasname = "images/inventoryimages/hamletinventory.xml"		
 	inst.caminho = "images/inventoryimages/hamletinventory.xml"	
     inst.components.inventoryitem.cangoincontainer = false
-    inst.foleysound = "dontstarve_DLC003/common/crafted/vortex_armour/foley"
-
+    
     inst:AddComponent("container")
 	inst.components.container:WidgetSetup("backpack")
 

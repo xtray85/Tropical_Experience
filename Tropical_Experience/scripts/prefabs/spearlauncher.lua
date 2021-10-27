@@ -45,7 +45,7 @@ local function OnAttack(inst, attacker, target)
 	if spear then
 		local old = spear.components.weapon.attackwear
 		spear.components.weapon.attackwear = SPEAR_LAUNCHER_SPEAR_WEAR
-		spear.components.weapon:OnAttack(attacker, target, true)
+		spear.components.weapon:OnAttack(attacker, target, nil)
 		spear.components.weapon.attackwear = old
 		inst.components.inventory:DropItem(spear, true, false, target:GetPosition())
 		local pos = spear:GetPosition()
