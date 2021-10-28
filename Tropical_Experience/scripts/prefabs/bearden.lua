@@ -64,7 +64,7 @@ local function oninit(inst)
 end
 
 local function onoccupied(inst, child)
-		inst.SoundEmitter:PlaySound("dontstarve_DLC002/creatures/dragoon/idle")  
+		
 end
 
 local function onvacate(inst, child)

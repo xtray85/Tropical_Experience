@@ -119,10 +119,10 @@ local function makebirdex(name, feathername, takeoff_soundname, chirp_soundname,
 
 	local cormorantsounds =
 	{
-		takeoff = "dontstarve_DLC002/creatures/birds/cormorante_takeoff",
-		chirp = "dontstarve_DLC002/creatures/birds/cormorant_chirp",
+		takeoff = "dontstarve/birds/cormorante_takeoff",
+		chirp = "dontstarve/birds/cormorant_chirp",
 		flyin = "dontstarve/birds/flyin",
-		land = "dontstarve_DLC002/creatures/birds/bird_land_water",
+		land = "dontstarve/birds/bird_land_water",
 	}
 
 	local function OnTrapped(inst, data)
@@ -332,9 +332,7 @@ local function makebirdex(name, feathername, takeoff_soundname, chirp_soundname,
 		    inst.components.talker.font = TALKINGFONT
 		    inst.components.talker.colour = Vector3(.9, .4, .4, 1)
 		    inst:ListenForEvent("donetalking", function() inst.SoundEmitter:KillSound("talk") end)
-		    inst:ListenForEvent("ontalk", function()
-		    	inst.SoundEmitter:PlaySound("dontstarve_DLC002/creatures/parrot/chirp", "talk")
-			end)
+		    
 
 --			inst:AddComponent("talkingbird")
 

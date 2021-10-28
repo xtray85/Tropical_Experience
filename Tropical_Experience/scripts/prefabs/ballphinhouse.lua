@@ -21,7 +21,6 @@ local function LightsOn(inst)
         inst.Light:Enable(true)
 
         inst.AnimState:PlayAnimation("lit", true)
-        inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/ballphin_house/lit")
         inst.lightson = true
     end
 end
@@ -44,7 +43,6 @@ local function onnear(inst)
 end
 
 local function onoccupied(inst, child)
-	inst.SoundEmitter:PlaySound("dontstarve_DLC002/creatures/balphin/in_house_LP", "pigsound")
 	inst.SoundEmitter:PlaySound("dontstarve/common/pighouse_door")
 	
 	if inst.doortask then
@@ -114,8 +112,6 @@ local function OnDay(inst)
 end
 
 local function onbuilt(inst)
-	inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/ballphin_house_craft")
-	inst.SoundEmitter:PlaySound("dontstarve_DLC002/creatures/seacreature_movement/splash_medium")
 	inst.AnimState:PlayAnimation("place")
 	inst.AnimState:PushAnimation("idle")
 end

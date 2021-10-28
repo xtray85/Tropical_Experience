@@ -82,7 +82,6 @@ function MakeObsidianTool(inst, tooltype)
 
     if inst.components.floatable then
         inst.components.floatable:SetOnHitWaterFn(function(inst)
---            inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/obsidian_wetsizzles")
             inst.components.obsidiantool:SetCharge(0)
         end)
     end

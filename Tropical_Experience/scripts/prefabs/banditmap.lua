@@ -204,9 +204,6 @@ local function onfinishcallback(inst, worker)
 			inst.components.lootdropper:DropLoot(pt + (TheCamera:GetRightVec()*(math.random()+1)))
 		end
 		
-		inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/loot_reveal")
-
-		
 local chest = SpawnPrefab("treasurechest")
 local map = TheWorld.Map
 local x, y, z = inst.Transform:GetWorldPosition()

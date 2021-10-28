@@ -15,7 +15,6 @@ local prefabs = {
 local ShadowWarnTime = 2
 
 local function DoStep(inst)
-	inst.SoundEmitter:PlaySound("dontstarve_DLC001/creatures/glommer/foot_ground")
 	--ShakeAllCameras(CAMERASHAKE.VERTICAL, 0.5, 0.03, 2, inst, 40)
 	for i, v in ipairs(AllPlayers) do
 		v:ShakeCamera(CAMERASHAKE.VERTICAL, 0.5, 0.03, 2, inst, 40)

@@ -90,7 +90,6 @@ local function onhackedfn(inst, hacker, hacksleft)
 
 	if(hacksleft <= 0) then
 		inst.AnimState:PlayAnimation("picking")
-		inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/bamboo_drop")
 		if inst.prefab ~= "oceanbambootree" and inst.prefab ~= "oceanbambootreebig" then 
 		RemovePhysicsColliders(inst)
 		end
@@ -98,7 +97,6 @@ local function onhackedfn(inst, hacker, hacksleft)
 		inst.AnimState:PlayAnimation("chop")
 		inst.AnimState:PushAnimation("idle")
 	end
-	inst.SoundEmitter:PlaySound("dontstarve_DLC002/common/bamboo_hack")
 end
 
 
