@@ -24,7 +24,7 @@ end
 
 
 
-local client_option = GetModConfigData("active", true) -- to allow clients to disable highlighting
+local client_option = GetModConfigData("FINDER_ACTIVE", true) -- to allow clients to disable highlighting
 
 local isDST = _G.TheSim:GetGameID() == 'DST'
 

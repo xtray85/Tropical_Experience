@@ -22,5 +22,15 @@ configuration_options = {
 	{
 		name = "DISCORD_LABEL",
 		default = "Discord Сервер"
-	}
+	},
+	{
+		name = "FINDER_ACTIVE",
+		label = "Active?",
+		hover = "Do you want to enable or disable highlighting?\nThis way also clients can disable highlighting if they want to.",
+		options =	{
+						{description = "Disabled", data = false}, -- to allow clients to disable highlighting
+                        {description = "Enabled", data = true},
+					},
+		default = true,
+	},
 }
