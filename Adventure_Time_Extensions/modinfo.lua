@@ -1,5 +1,5 @@
 name =						"[DST] Adventure Time Extensions"
-version = 					"0.0.4"
+version = 					"0.0.6"
 description =				"Version: "..version
 author =					"xTray"
 
