@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Atlas>
+	<Texture filename="btns.tex" />
+	<Elements>
+		<Element name="discord.tex" u1="0.001" u2="0.59275" v2="0.5224375" v1="0.047875" variant="" />
+	</Elements>
+</Atlas>
