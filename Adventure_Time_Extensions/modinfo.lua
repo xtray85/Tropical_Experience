@@ -1,5 +1,5 @@
 name =						"[DST] Adventure Time Extensions"
-version = 					"0.0.1"
+version = 					"0.0.4"
 description =				"Version: "..version
 author =					"xTray"
 
@@ -25,7 +25,7 @@ configuration_options = {
 	},
 	{
 		name = "FINDER_ACTIVE",
-		label = "Active?",
+		label = "Finder active",
 		hover = "Do you want to enable or disable highlighting?\nThis way also clients can disable highlighting if they want to.",
 		options =	{
 						{description = "Disabled", data = false}, -- to allow clients to disable highlighting

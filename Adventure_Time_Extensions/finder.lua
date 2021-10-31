@@ -4,8 +4,7 @@ local SERVER_SIDE = nil
 local DEDICATED_SIDE = nil
 local CLIENT_SIDE = nil
 local ONLY_CLIENT_SIDE = nil
--- code from star:
--- Also notice that if SERVER_SIDE is nil and CLIENT_SIDE is nil too, that means the mod is force enabled and it's working on main screen. I guess. 
+
 if GLOBAL.TheNet:GetIsServer() then
 	SERVER_SIDE = true
 	if GLOBAL.TheNet:IsDedicated() then
