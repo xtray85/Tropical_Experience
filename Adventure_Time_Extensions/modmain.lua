@@ -1,4 +1,5 @@
-modimport "main.lua"
+modimport "discord.lua"
 modimport "finder.lua"
-modimport "to_burn.lua"
+modimport "burn_items.lua"
 modimport "fixes.lua"
+modimport "packable_items.lua"
