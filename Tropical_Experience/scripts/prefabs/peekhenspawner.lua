@@ -114,7 +114,7 @@ local function LookForFood(inst)
 			food:ListenForEvent("onremove", stophuntingfood)
 			peekhen:ListenForEvent("onremove", stophuntingfood)
 
-			inst.SoundEmitter:PlaySound("dontstarve_DLC001/creatures/peekhen/distant")
+			--inst.SoundEmitter:PlaySound("dontstarve_DLC001/creatures/peekhen/distant")
 		end
     end
 end
