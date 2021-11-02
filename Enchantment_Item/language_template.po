@@ -1,0 +1,519 @@
+#: STRINGS.NAMES.MOD_CLEANER
+msgid "Magic Duct Tape"
+msgstr "Magic Duct Tape"
+
+#: STRINGS.RECIPE_DESC.MOD_CLEANER
+msgid "Remove enchantment, and maybe item too!"
+msgstr "Remove enchantment, and maybe item too!"
+
+#: STRINGS.CHARACTERS.GENERIC.DESCRIBE.MOD_CLEANER
+msgid "I can disenchant items with this but I might lose my item too. I should be careful!"
+msgstr "I can disenchant items with this but I might lose my item too. I should be careful!"
+
+#: STRINGS.ACTIONS.MOD_CLEAN
+msgid "Disenchant"
+msgstr "Disenchant"
+
+#: STRINGS.MODIFIER_RARITIES.WORST
+msgid "Worst"
+msgstr "Worst"
+
+#: STRINGS.MODIFIER_RARITIES.BAD
+msgid "Bad"
+msgstr "Bad"
+
+#: STRINGS.MODIFIER_RARITIES.GOOD
+msgid "Good"
+msgstr "好"
+
+#: STRINGS.MODIFIER_RARITIES.RARE
+msgid "Rare"
+msgstr "Rare"
+
+#: STRINGS.MODIFIER_RARITIES.EPIC
+msgid "Epic"
+msgstr "Epic"
+
+#: STRINGS.MODIFIER_RARITIES.LEGENDARY
+msgid "Legendary"
+msgstr "Legendary"
+
+#: STRINGS.MODIFIER_RARITIES.MYTHIC
+msgid "MYTHIC"
+msgstr "MYTHIC"
+
+#: STRINGS.MODIFIER_RARITIES.TEST
+msgid "???"
+msgstr "???"
+
+#: STRINGS.MODIFIERS.GENERIC.PREFIX
+msgid "Modified"
+msgstr "Modified"
+
+#: STRINGS.MODIFIERS.GENERIC.DESC
+msgid "Unknown Modifier"
+msgstr "Unknown Modifier"
+
+#: STRINGS.MODIFIERS.SANITYSONG.PREFIX
+msgid "Song of Dapperness"
+msgstr "Song of Dapperness"
+
+#: STRINGS.MODIFIERS.SANITYSONG.DESC
+msgid "When heard, nearby players will get a sanity regeneration buff for a short duration."
+msgstr "When heard, nearby players will get a sanity regeneration buff for a short duration."
+
+#: STRINGS.MODIFIERS.REVIVALSONG.PREFIX
+msgid "Song of Reanimation"
+msgstr "Song of Reanimation"
+
+#: STRINGS.MODIFIERS.REVIVALSONG.DESC
+msgid "When heard, nearby ghost players will be resurrected from death."
+msgstr "When heard, nearby ghost players will be resurrected from death."
+
+#: STRINGS.MODIFIERS.REGENSONG.PREFIX
+msgid "Song of Regeneration"
+msgstr "Song of Regeneration"
+
+#: STRINGS.MODIFIERS.REGENSONG.DESC
+msgid "When heard, players will get a health regeneration buff for a short duration."
+msgstr "When heard, players will get a health regeneration buff for a short duration."
+
+#: STRINGS.MODIFIERS.TAUNTSONG.PREFIX
+msgid "Song of Irritation"
+msgstr "Song of Irritation"
+
+#: STRINGS.MODIFIERS.TAUNTSONG.DESC
+msgid "When heard, nearby enemies will become irritated and aggresive at you."
+msgstr "When heard, nearby enemies will become irritated and aggresive at you."
+
+#: STRINGS.MODIFIERS.TELESENSITIVE.PREFIX
+msgid "Telepoofing"
+msgstr "Telepoofing"
+
+#: STRINGS.MODIFIERS.TELESENSITIVE.DESC
+msgid "Damage taken has a chance of randomly teleporting the wearer somewhere close by."
+msgstr "Damage taken has a chance of randomly teleporting the wearer somewhere close by."
+
+#: STRINGS.MODIFIERS.SOULBOUND.PREFIX
+msgid "Loyal"
+msgstr "Loyal"
+
+#: STRINGS.MODIFIERS.SOULBOUND.DESC
+msgid "Item is bound to the user, on pick up, it will be automatically equipped, but unequippable. Kept on death(if equipped)"
+msgstr "Item is bound to the user, on pick up, it will be automatically equipped, but unequippable. Kept on death(if equipped)"
+
+#: STRINGS.MODIFIERS.TOUGHNESS_1.PREFIX
+msgid "Steady"
+msgstr "Steady"
+
+#: STRINGS.MODIFIERS.TOUGHNESS_1.DESC
+msgid "-25% Durability usage."
+msgstr "-25% Durability usage."
+
+#: STRINGS.MODIFIERS.RESISTANCE_X.PREFIX
+msgid "Untouchable"
+msgstr "Untouchable"
+
+#: STRINGS.MODIFIERS.RESISTANCE_X.DESC
+msgid "100% Damage reduction."
+msgstr "100% Damage reduction."
+
+#: STRINGS.MODIFIERS.RESISTANCE_1.PREFIX
+msgid "Resistant"
+msgstr "Resistant"
+
+#: STRINGS.MODIFIERS.RESISTANCE_1.DESC
+msgid "+10% Damage reduction."
+msgstr "+10% Damage reduction."
+
+#: STRINGS.MODIFIERS.TOUGHNESS_2.PREFIX
+msgid "Sturdy"
+msgstr "Sturdy"
+
+#: STRINGS.MODIFIERS.TOUGHNESS_2.DESC
+msgid "-50% Durability usage."
+msgstr "-50% Durability usage."
+
+#: STRINGS.MODIFIERS.WEAKNESS_2.PREFIX
+msgid "Fragile"
+msgstr "Fragile"
+
+#: STRINGS.MODIFIERS.WEAKNESS_2.DESC
+msgid "+50% Durability usage."
+msgstr "+50% Durability usage."
+
+#: STRINGS.MODIFIERS.ICEY_THORNS.PREFIX
+msgid "Freezing"
+msgstr "Freezing"
+
+#: STRINGS.MODIFIERS.ICEY_THORNS.DESC
+msgid "Damage taken has a chance to cool the attacker (Doesn't effect wearer in anyway)"
+msgstr "Damage taken has a chance to cool the attacker (Doesn't effect wearer in anyway)"
+
+#: STRINGS.MODIFIERS.FIERY_THORNS.PREFIX
+msgid "Flaming"
+msgstr "Flaming"
+
+#: STRINGS.MODIFIERS.FIERY_THORNS.DESC
+msgid "Damage taken has a chance to burn the attacker (Doesn't effect wearer in anyway)"
+msgstr "Damage taken has a chance to burn the attacker (Doesn't effect wearer in anyway)"
+
+#: STRINGS.MODIFIERS.TOUGHNESS_X.PREFIX
+msgid "Unbreakable"
+msgstr "Unbreakable"
+
+#: STRINGS.MODIFIERS.TOUGHNESS_X.DESC
+msgid "Infinite Durability"
+msgstr "Infinite Durability"
+
+#: STRINGS.MODIFIERS.WEAKNESS_1.PREFIX
+msgid "Weak"
+msgstr "Weak"
+
+#: STRINGS.MODIFIERS.WEAKNESS_1.DESC
+msgid "+25% Durability usage."
+msgstr "+25% Durability usage."
+
+#: STRINGS.MODIFIERS.RESISTANCE_2.PREFIX
+msgid "Protective"
+msgstr "Protective"
+
+#: STRINGS.MODIFIERS.RESISTANCE_2.DESC
+msgid "+25% Damage reduction."
+msgstr "+25% Damage reduction."
+
+#: STRINGS.MODIFIERS.THORNS.PREFIX
+msgid "Thorny"
+msgstr "Thorny"
+
+#: STRINGS.MODIFIERS.THORNS.DESC
+msgid "Damage taken is slightly reflected back to the attacker"
+msgstr "Damage taken is slightly reflected back to the attacker"
+
+#: STRINGS.MODIFIERS.STURDY_1.PREFIX
+msgid "Steady"
+msgstr "Steady"
+
+#: STRINGS.MODIFIERS.STURDY_1.DESC
+msgid "-25% Durability usage."
+msgstr "-25% Durability usage."
+
+#: STRINGS.MODIFIERS.FRAGILE_1.PREFIX
+msgid "Weak"
+msgstr "Weak"
+
+#: STRINGS.MODIFIERS.FRAGILE_1.DESC
+msgid "+25% Durability usage."
+msgstr "+25% Durability usage."
+
+#: STRINGS.MODIFIERS.RESOURCELUST.PREFIX
+msgid "Resource-hungry"
+msgstr "Resource-hungry"
+
+#: STRINGS.MODIFIERS.RESOURCELUST.DESC
+msgid "Destruction dealt has a chance of slightly repairing the tool depending on destruction streak."
+msgstr "Destruction dealt has a chance of slightly repairing the tool depending on destruction streak."
+
+#: STRINGS.MODIFIERS.BLOODLUST.PREFIX
+msgid "Vampiric"
+msgstr "Vampiric"
+
+#: STRINGS.MODIFIERS.BLOODLUST.DESC
+msgid "Damage dealt has a chance of slightly repairing the weapon depending on kill streak."
+msgstr "Damage dealt has a chance of slightly repairing the weapon depending on kill streak."
+
+#: STRINGS.MODIFIERS.STURDY_X.PREFIX
+msgid "Unbreakable"
+msgstr "Unbreakable"
+
+#: STRINGS.MODIFIERS.STURDY_X.DESC
+msgid "Infinite Durability."
+msgstr "Infinite Durability."
+
+#: STRINGS.MODIFIERS.FRAGILE_2.PREFIX
+msgid "Fragile"
+msgstr "Fragile"
+
+#: STRINGS.MODIFIERS.FRAGILE_2.DESC
+msgid "+50% Durability usage."
+msgstr "+50% Durability usage."
+
+#: STRINGS.MODIFIERS.STURDY_2.PREFIX
+msgid "Sturdy"
+msgstr "Sturdy"
+
+#: STRINGS.MODIFIERS.STURDY_2.DESC
+msgid "-50% Durability usage."
+msgstr "-50% Durability usage."
+
+#: STRINGS.MODIFIERS.SHARPNESS_3.PREFIX
+msgid "Razor-sharp"
+msgstr "Razor-sharp"
+
+#: STRINGS.MODIFIERS.SHARPNESS_3.DESC
+msgid "+75% Damage dealt."
+msgstr "+75% Damage dealt."
+
+#: STRINGS.MODIFIERS.SHARPNESS_1.PREFIX
+msgid "Pointy"
+msgstr "Pointy"
+
+#: STRINGS.MODIFIERS.SHARPNESS_1.DESC
+msgid "+10% Damage dealt."
+msgstr "+10% Damage dealt."
+
+#: STRINGS.MODIFIERS.DULNESS_1.PREFIX
+msgid "Dull"
+msgstr "Dull"
+
+#: STRINGS.MODIFIERS.DULNESS_1.DESC
+msgid "-10% Damage dealt."
+msgstr "-10% Damage dealt."
+
+#: STRINGS.MODIFIERS.TELECOWARD.PREFIX
+msgid "Telepoofing"
+msgstr "Telepoofing"
+
+#: STRINGS.MODIFIERS.TELECOWARD.DESC
+msgid "Damage dealt has a chance of randomly teleporting the wearer somewhere close by."
+msgstr "Damage dealt has a chance of randomly teleporting the wearer somewhere close by."
+
+#: STRINGS.MODIFIERS.DULNESS_2.PREFIX
+msgid "Blunt"
+msgstr "Blunt"
+
+#: STRINGS.MODIFIERS.DULNESS_2.DESC
+msgid "-30% Damage dealt."
+msgstr "-30% Damage dealt."
+
+#: STRINGS.MODIFIERS.SHARPNESS_2.PREFIX
+msgid "Sharp"
+msgstr "Sharp"
+
+#: STRINGS.MODIFIERS.SHARPNESS_2.DESC
+msgid "+25% Damage dealt."
+msgstr "+25% Damage dealt."
+
+#: STRINGS.MODIFIERS.GHOSTSTRIKE.PREFIX
+msgid "Ghost Strike"
+msgstr "Ghost Strike"
+
+#: STRINGS.MODIFIERS.GHOSTSTRIKE.DESC
+msgid "Attacking a target will instead create a ghost that does the attack for you (increasing your range)."
+msgstr "Attacking a target will instead create a ghost that does the attack for you (increasing your range)."
+
+#: STRINGS.MODIFIERS.LIFESTEAL.PREFIX
+msgid "Lifestealing"
+msgstr "Lifestealing"
+
+#: STRINGS.MODIFIERS.LIFESTEAL.DESC
+msgid "Damage dealt has a chance to heal the player slightly."
+msgstr "Damage dealt has a chance to heal the player slightly."
+
+#: STRINGS.MODIFIERS.ICEY.PREFIX
+msgid "Icey"
+msgstr "Icey"
+
+#: STRINGS.MODIFIERS.ICEY.DESC
+msgid "Damage dealt has a chance of cooling the target."
+msgstr "Damage dealt has a chance of cooling the target."
+
+#: STRINGS.MODIFIERS.FIERY.PREFIX
+msgid "Fiery"
+msgstr "Fiery"
+
+#: STRINGS.MODIFIERS.FIERY.DESC
+msgid "Damage dealt has a chance of burning the target."
+msgstr "Damage dealt has a chance of burning the target."
+
+#: STRINGS.MODIFIERS.EFFICIENCY_1.PREFIX
+msgid "Efficient"
+msgstr "Efficient"
+
+#: STRINGS.MODIFIERS.EFFICIENCY_1.DESC
+msgid "-10% Fuel usage."
+msgstr "-10% Fuel usage."
+
+#: STRINGS.MODIFIERS.INEFFICIENCY_1.PREFIX
+msgid "Inefficient"
+msgstr "Inefficient"
+
+#: STRINGS.MODIFIERS.INEFFICIENCY_1.DESC
+msgid "+10% Fuel usage."
+msgstr "+10% Fuel usage."
+
+#: STRINGS.MODIFIERS.SOLAR.PREFIX
+msgid "Solar"
+msgstr "Solar"
+
+#: STRINGS.MODIFIERS.SOLAR.DESC
+msgid "Natural light slowly refuels the item if it is off and not being carried"
+msgstr "Natural light slowly refuels the item if it is off and not being carried"
+
+#: STRINGS.MODIFIERS.INEFFICIENCY_2.PREFIX
+msgid "Impotent"
+msgstr "Impotent"
+
+#: STRINGS.MODIFIERS.INEFFICIENCY_2.DESC
+msgid "+25% Fuel usage."
+msgstr "+25% Fuel usage."
+
+#: STRINGS.MODIFIERS.EFFICIENCY_2.PREFIX
+msgid "Economical"
+msgstr "Economical"
+
+#: STRINGS.MODIFIERS.EFFICIENCY_2.DESC
+msgid "-25% Fuel usage."
+msgstr "-25% Fuel usage."
+
+#: STRINGS.MODIFIERS.GODLIKE.PREFIX
+msgid "Godlike"
+msgstr "Godlike"
+
+#: STRINGS.MODIFIERS.GODLIKE.DESC
+msgid "Has most positive modifiers all in 1."
+msgstr "Has most positive modifiers all in 1."
+
+#: STRINGS.MODIFIERS.FAST_PROJECTILE.PREFIX
+msgid "Speedy"
+msgstr "Speedy"
+
+#: STRINGS.MODIFIERS.FAST_PROJECTILE.DESC
+msgid "+50% Projectile Speed."
+msgstr "+50% Projectile Speed."
+
+#: STRINGS.MODIFIERS.SLOW_PROJECTILE.PREFIX
+msgid "Sluggish"
+msgstr "Sluggish"
+
+#: STRINGS.MODIFIERS.SLOW_PROJECTILE.DESC
+msgid "-50% Projectile Speed."
+msgstr "-50% Projectile Speed."
+
+#: STRINGS.MODIFIERS.COLLISION_PROJECTILE.PREFIX
+msgid "Hurtful"
+msgstr "Hurtful"
+
+#: STRINGS.MODIFIERS.COLLISION_PROJECTILE.DESC
+msgid "While travelling to its target, anything it touches also gets hit."
+msgstr "While travelling to its target, anything it touches also gets hit."
+
+#: STRINGS.MODIFIERS.REPAIRER.PREFIX
+msgid "Enchanted"
+msgstr "Enchanted"
+
+#: STRINGS.MODIFIERS.REPAIRER.DESC
+msgid "Anything you disenchant will also get repaired, while also removing the chance of losing the item."
+msgstr "Anything you disenchant will also get repaired, while also removing the chance of losing the item."
+
+#: STRINGS.MODIFIERS.INFINITE.PREFIX
+msgid "Everlasting"
+msgstr "Everlasting"
+
+#: STRINGS.MODIFIERS.INFINITE.DESC
+msgid "Infinite Durability."
+msgstr "Infinite Durability."
+
+#: STRINGS.MODIFIERS.FREEZER.PREFIX
+msgid "Chilly"
+msgstr "Chilly"
+
+#: STRINGS.MODIFIERS.FREEZER.DESC
+msgid "Anything inside this container perishes slower."
+msgstr "Anything inside this container perishes slower."
+
+#: STRINGS.MODIFIERS.LIGHTWEIGHT.PREFIX
+msgid "Lightweight"
+msgstr "Lightweight"
+
+#: STRINGS.MODIFIERS.LIGHTWEIGHT.DESC
+msgid "Walking with this item equipped is easier."
+msgstr "Walking with this item equipped is easier."
+
+#: STRINGS.MODIFIERS.HEAVYWEIGHT.PREFIX
+msgid "Heavyweight"
+msgstr "Heavyweight"
+
+#: STRINGS.MODIFIERS.HEAVYWEIGHT.DESC
+msgid "Walking with this item equipped is harder."
+msgstr "Walking with this item equipped is harder."
+
+#: STRINGS.MODIFIERS.RUSHING.PREFIX
+msgid "Rushing"
+msgstr "Rushing"
+
+#: STRINGS.MODIFIERS.RUSHING.DESC
+msgid "Damage dealt will cause the attacker to run faster for a short time."
+msgstr "Damage dealt will cause the attacker to run faster for a short time."
+
+#: STRINGS.MODIFIERS.SLOWING.PREFIX
+msgid "Slowing"
+msgstr "Slowing"
+
+#: STRINGS.MODIFIERS.SLOWING.DESC
+msgid "Damage dealt will cause the attacker to run slower for a short time."
+msgstr "Damage dealt will cause the attacker to run slower for a short time."
+
+#: STRINGS.MODIFIERS.ELECTRIC_THORNS.PREFIX
+msgid "Zapping"
+msgstr "Zapping"
+
+#: STRINGS.MODIFIERS.ELECTRIC_THORNS.DESC
+msgid "Damage dealt will cause the attacker to get hit by lightning and get teleported away. (Only when an orb is present)"
+msgstr "Damage dealt will cause the attacker to get hit by lightning and get teleported away. (Only when an orb is present)"
+
+#: STRINGS.MODIFIERS.MINDFIZZLER.PREFIX
+msgid "Moonwalker's"
+msgstr "Moonwalker's"
+
+#: STRINGS.MODIFIERS.MINDFIZZLER.DESC
+msgid "Movement controls are inverted."
+msgstr "Movement controls are inverted."
+
+#: STRINGS.MODIFIERS.FIREPROOF.PREFIX
+msgid "Fireproof"
+msgstr "Fireproof"
+
+#: STRINGS.MODIFIERS.FIREPROOF.DESC
+msgid "Resistant to fire."
+msgstr "Resistant to fire."
+
+#: STRINGS.MODIFIERS.UNWITHERING.PREFIX
+msgid "Unwithering"
+msgstr "Unwithering"
+
+#: STRINGS.MODIFIERS.UNWITHERING.DESC
+msgid "This backpack's skin does not decay."
+msgstr "This backpack's skin does not decay."
+
+#: STRINGS.MODIFIERS.WITHERED.PREFIX
+msgid "Withered"
+msgstr "Withered"
+
+#: STRINGS.MODIFIERS.WITHERED.DESC
+msgid "This backpack's skin is instantly withered."
+msgstr "This backpack's skin is instantly withered."
+
+#: STRINGS.MODIFIERS.PRESERVER.PREFIX
+msgid "Reallocting"
+msgstr "Reallocting"
+
+#: STRINGS.MODIFIERS.PRESERVER.DESC
+msgid "The enchantment is rerolled onto an unenchanted item, including the one just disenchanted. Bad enchantments are upgraded."
+msgstr "The enchantment is rerolled onto an unenchanted item, including the one just disenchanted. Bad enchantments are upgraded."
+
+#: STRINGS.MODIFIERS.MINDASCENDER.PREFIX
+msgid "Tinkerer's"
+msgstr "Tinkerer's"
+
+#: STRINGS.MODIFIERS.MINDASCENDER.DESC
+msgid "While equipped, the wearer can disassemble crafted items for a large portion of this item's durability."
+msgstr "While equipped, the wearer can disassemble crafted items for a large portion of this item's durability."
+
+#: STRINGS.MODIFIERS.MINDTRANSCENDER.PREFIX
+msgid "Master Tinkerer's"
+msgstr "Master Tinkerer's"
+
+#: STRINGS.MODIFIERS.MINDTRANSCENDER.DESC
+msgid "While equipped, the wearer can disassemble crafted items for a small portion of this item's durability. Enchantments are preserved onto other items if any."
+msgstr "While equipped, the wearer can disassemble crafted items for a small portion of this item's durability. Enchantments are preserved onto other items if any."
