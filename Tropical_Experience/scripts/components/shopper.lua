@@ -140,10 +140,13 @@ function Shopper:CanPayFor(prefab)
 		end 
 		
 		local prefab_wanted = prefab.costprefab
---		print("TESTING prefab_wanted",prefab_wanted)
+		--print("TESTING prefab_wanted",prefab_wanted)
+		--print("TESTING perfab cost",prefab.cost)
 		
 		if prefab_wanted == "oinc" then
- 			if self:GetMoney(inventory) >= prefab.cost then
+			local myMoney = self:GetMoney(inventory)
+			local costItem = tonumber(prefab.cost)
+ 			if myMoney ~= nil and costItem ~= nil and myMoney >= costItem then
  				return true
  			end
 		else			

@@ -1,7 +1,7 @@
-name = "Item Enchantments"
-description = "Items can have enchantments depending on their components and attributes. Enchantments can be randomly obtained upon crafting(up to rare enchantments). Enchantments can also be obtained from 'Boss' monsters that can spawn in your world. These are bigger varients of normal monsters that hit harder and have higher health."
+name = "Item Enchantments (modified)"
+description = "Modified by xTray"
 author = "Aquaterion"
-version = "v1.9"
+version = "v1.9.2"
 
 forumthread = ""
 

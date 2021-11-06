@@ -552,27 +552,27 @@ function GLOBAL.SpawnBoss(inst, rarity)
 			end
 		end)
 	end
-	inst.components.combat:SetDefaultDamage(inst.components.combat.defaultdamage * 2 or 50)--100% more damage
+	inst.components.combat:SetDefaultDamage(inst.components.combat.defaultdamage)--100% more damage
 	inst.components.health:SetMaxHealth(inst.components.health.maxhealth * 1.5)--50% more health
-	inst.components.combat:SetRange(inst.components.combat.attackrange * 1.5, inst.components.combat.hitrange * 1.5)
+	inst.components.combat:SetRange(inst.components.combat.attackrange, inst.components.combat.hitrange)
 	inst:ListenForEvent("death", onBossDeath)
 	if not inst:HasTag("epic") then
-		inst.components.combat:SetAttackPeriod(inst.components.combat.min_attack_period * 0.75)
+		inst.components.combat:SetAttackPeriod(inst.components.combat.min_attack_period)
 		inst:DoPeriodicTask(10, function() 
 			if inst.components.combat.target and inst.components.combat.target.components.locomotor then
 				if inst.components.combat.target.unslowtask then
 					inst.components.combat.target.unslowtask:Cancel()
 					inst.components.combat.target.unslowtask = nil
 				end
-				inst.components.combat.target:SpawnChild("buff_fx"):anim("negative", { build = "buff_fx", symbol = "speed"})
+				--inst.components.combat.target:SpawnChild("buff_fx"):anim("negative", { build = "buff_fx", symbol = "speed"})
 				--TODO убрать дебаф
-				if inst.components.combat.target.components.locomotor:GetExternalSpeedMultiplier(inst, "bossdebuff") == 1 then
-					inst.components.combat.target.components.locomotor:SetExternalSpeedMultiplier(inst, "bossdebuff", 0.5)
-				end
+				--if inst.components.combat.target.components.locomotor:GetExternalSpeedMultiplier(inst, "bossdebuff") == 1 then
+				--	inst.components.combat.target.components.locomotor:SetExternalSpeedMultiplier(inst, "bossdebuff", 0.5)
+				--end
 				
-				inst.components.combat.target.unslowtask = inst.components.combat.target:DoTaskInTime(12, function(target) 
-					target.components.locomotor:RemoveExternalSpeedMultiplier(inst, "bossdebuff")
-				end)
+				--inst.components.combat.target.unslowtask = inst.components.combat.target:DoTaskInTime(12, function(target) 
+				--	target.components.locomotor:RemoveExternalSpeedMultiplier(inst, "bossdebuff")
+				--end)
 			end
 		end)
 	end
@@ -599,7 +599,7 @@ local function PickBossType(inst, msg)
 	for k,v in pairs(sortedrarities) do
 		if bosstype[v] and math.random() < bosstype[v] then
 			GLOBAL.SpawnBoss(inst, v)
-			GLOBAL.TheNet:Announce("A " .. inst.name .. " has " .. msg .. "!")
+			GLOBAL.TheNet:Announce("A " .. inst.name .. " has " .. msg .. " (" .. v ..") !")
 			return true
 		end
 	end

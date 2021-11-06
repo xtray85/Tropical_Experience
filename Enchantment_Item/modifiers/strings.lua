@@ -2,19 +2,19 @@ local STRINGS = GLOBAL.STRINGS
 
 GLOBAL.STRINGS.NAMES.MOD_CLEANER = "Magic Duct Tape"
 GLOBAL.STRINGS.RECIPE_DESC.MOD_CLEANER = "Remove enchantment, and maybe item too!"
-GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.MOD_CLEANER = "I can disenchant items with this but I might lose my item too. I should be careful!"
+GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.MOD_CLEANER = "Может снять зачарование, но есть маленький шанс сломать предмет!"
 
 GLOBAL.STRINGS.ACTIONS.MOD_CLEAN = "Disenchant"
 GLOBAL.STRINGS.ACTIONS.MOD_DISASSEMBLE = "Disassemble"
 
 STRINGS.MODIFIER_RARITIES = {
-    WORST = "Worst",
-    BAD = "Bad",
-    GOOD = "Good",
-    RARE = "Rare",
-    EPIC = "Epic",
-    LEGENDARY = "Legendary",
-    MYTHIC = "Mythic",
+    WORST = "Наихудший",
+    BAD = "Плохой",
+    GOOD = "Хороший",
+    RARE = "Редкий",
+    EPIC = "Эпический",
+    LEGENDARY = "Легендарный",
+    MYTHIC = "Мифический",
     TEST = "???",
 }
 
@@ -26,77 +26,77 @@ STRINGS.MODIFIERS.GENERIC = {
 
 STRINGS.MODIFIERS.SANITYSONG = {
 	PREFIX = "Song of Dapperness",
-	DESC = "When heard, nearby players will get a sanity regeneration buff for a short duration.",
+	DESC = "Когда услышите, что ближайшие игроки получат бафф восстановления рассудка на короткое время.",
 }
 
 STRINGS.MODIFIERS.REVIVALSONG = {
 	PREFIX = "Song of Reanimation",
-	DESC = "When heard, nearby ghost players will be resurrected from death.",
+	DESC = "Когда услышите, что ближайшие призрачные игроки воскреснут из мертвых.",
 }
 
 STRINGS.MODIFIERS.REGENSONG = {
 	PREFIX = "Song of Regeneration",
-	DESC = "When heard, players will get a health regeneration buff for a short duration.",
+	DESC = "Когда услышите, игроки получат бафф восстановления здоровья на короткое время.",
 }
 
 STRINGS.MODIFIERS.TAUNTSONG = {
 	PREFIX = "Song of Irritation",
-	DESC = "When heard, nearby enemies will become irritated and aggresive at you.",
+	DESC = "Когда вас услышат, ближайшие враги станут раздраженными и агрессивными.",
 }
 
 STRINGS.MODIFIERS.TELESENSITIVE = {
 	PREFIX = "Telepoofing",
-	DESC = "Damage taken has a chance of randomly teleporting the wearer somewhere close by.",
+	DESC = "Полученный урон имеет шанс случайным образом телепортировать носящего куда-нибудь поблизости.",
 }
 
 STRINGS.MODIFIERS.SOULBOUND = {
 	PREFIX = "Loyal",
-	DESC = "Item is bound to the user, on pick up, it will be automatically equipped, but unequippable. Kept on death(if equipped)",
+	DESC = "Предмет привязан к пользователю, при получении он будет автоматически экипирован, но не может быть экипирован. Хранится при смерти (если есть)",
 }
 
 STRINGS.MODIFIERS.TOUGHNESS_1 = {
 	PREFIX = "Steady",
-	DESC = "-25% Durability usage.",
+	DESC = "-25% Долговечность использования.",
 }
 
 STRINGS.MODIFIERS.RESISTANCE_X = {
 	PREFIX = "Untouchable",
-	DESC = "100% Damage reduction.",
+	DESC = "100% снижение урона.",
 }
 
 STRINGS.MODIFIERS.RESISTANCE_1 = {
 	PREFIX = "Resistant",
-	DESC = "+10% Damage reduction.",
+	DESC = "+ 10% снижения урона.",
 }
 
 STRINGS.MODIFIERS.TOUGHNESS_2 = {
 	PREFIX = "Sturdy",
-	DESC = "-50% Durability usage.",
+	DESC = "-50% Долговечность использования.",
 }
 
 STRINGS.MODIFIERS.WEAKNESS_2 = {
 	PREFIX = "Fragile",
-	DESC = "+50% Durability usage.",
+	DESC = "+ 50% Прочность использования.",
 }
 
 STRINGS.MODIFIERS.ICEY_THORNS = {
 	PREFIX = "Freezing",
-	DESC = "Damage taken has a chance to cool the attacker (Doesn't effect wearer in anyway)",
+	DESC = "Полученный урон имеет шанс охладить атакующего (в любом случае не влияет на носящего)",
 }
 
 STRINGS.MODIFIERS.FIERY_THORNS = {
 	PREFIX = "Flaming",
-	DESC = "Damage taken has a chance to burn the attacker (Doesn't effect wearer in anyway)",
+	DESC = "Полученный урон может сжечь атакующего (в любом случае не действует на носящего)",
 }
 
 STRINGS.MODIFIERS.TOUGHNESS_X = {
 	PREFIX = "Unbreakable",
-	DESC = "Infinite Durability",
+	DESC = "Бесконечная долговечность",
 }
 
 STRINGS.MODIFIERS.WEAKNESS_1 = {
 	PREFIX = "Weak",
-	DESC = "+25% Durability usage.",
+	DESC = "+ 25% Прочность использования.",
 }
 
 STRINGS.MODIFIERS.RESISTANCE_2 = {
@@ -106,42 +106,42 @@ STRINGS.MODIFIERS.RESISTANCE_2 = {
 
 STRINGS.MODIFIERS.THORNS = {
 	PREFIX = "Thorny",
-	DESC = "Damage taken is slightly reflected back to the attacker",
+	DESC = "+ 25% снижения урона.",
 }
 
 STRINGS.MODIFIERS.STURDY_1 = {
 	PREFIX = "Steady",
-	DESC = "-25% Durability usage.",
+	DESC = "-25% Долговечность использования.",
 }
 
 STRINGS.MODIFIERS.FRAGILE_1 = {
 	PREFIX = "Weak",
-	DESC = "+25% Durability usage.",
+	DESC = "+ 25% Прочность использования.",
 }
 
 STRINGS.MODIFIERS.RESOURCELUST = {
 	PREFIX = "Resource-hungry",
-	DESC = "Destruction dealt has a chance of slightly repairing the tool depending on destruction streak.",
+	DESC = "Разрушение имеет шанс немного отремонтировать инструмент в зависимости от серии разрушения.",
 }
 
 STRINGS.MODIFIERS.BLOODLUST = {
 	PREFIX = "Vampiric",
-	DESC = "Damage dealt has a chance of slightly repairing the weapon depending on kill streak.",
+	DESC = "Нанесенный урон может немного отремонтировать оружие в зависимости от серии убийств.",
 }
 
 STRINGS.MODIFIERS.STURDY_X = {
 	PREFIX = "Unbreakable",
-	DESC = "Infinite Durability.",
+	DESC = "Бесконечная прочность.",
 }
 
 STRINGS.MODIFIERS.FRAGILE_2 = {
 	PREFIX = "Fragile",
-	DESC = "+50% Durability usage.",
+	DESC = "+ 50% Прочность использования.",
 }
 
 STRINGS.MODIFIERS.STURDY_2 = {
 	PREFIX = "Sturdy",
-	DESC = "-50% Durability usage.",
+	DESC = "- 50% Прочность использования.",
 }
 
 STRINGS.MODIFIERS.SHARPNESS_3 = {
@@ -161,7 +161,7 @@ STRINGS.MODIFIERS.DULNESS_1 = {
 
 STRINGS.MODIFIERS.TELECOWARD = {
 	PREFIX = "Telepoofing",
-	DESC = "Damage dealt has a chance of randomly teleporting the wearer somewhere close by.",
+	DESC = "Нанесенный урон имеет шанс случайным образом телепортировать носящего куда-нибудь поблизости.",
 }
 
 STRINGS.MODIFIERS.DULNESS_2 = {
@@ -176,22 +176,22 @@ STRINGS.MODIFIERS.SHARPNESS_2 = {
 
 STRINGS.MODIFIERS.GHOSTSTRIKE = {
 	PREFIX = "Ghost Strike",
-	DESC = "Attacking a target will instead create a ghost that does the attack for you (increasing your range).",
+	DESC = "Вместо этого при атаке на цель создается призрак, который атакует за вас (увеличивая ваш диапазон).",
 }
 
 STRINGS.MODIFIERS.LIFESTEAL = {
 	PREFIX = "Lifestealing",
-	DESC = "Damage dealt has a chance to heal the player slightly.",
+	DESC = "Нанесенный урон может немного вылечить игрока.",
 }
 
 STRINGS.MODIFIERS.ICEY = {
 	PREFIX = "Icey",
-	DESC = "Damage dealt has a chance of cooling the target.",
+	DESC = "Нанесенный урон может охладить цель.",
 }
 
 STRINGS.MODIFIERS.FIERY = {
 	PREFIX = "Fiery",
-	DESC = "Damage dealt has a chance of burning the target.",
+	DESC = "Нанесенный урон может поджечь цель.",
 }
 
 STRINGS.MODIFIERS.EFFICIENCY_1 = {
@@ -206,7 +206,7 @@ STRINGS.MODIFIERS.INEFFICIENCY_1 = {
 
 STRINGS.MODIFIERS.SOLAR = {
 	PREFIX = "Solar",
-	DESC = "Natural light slowly refuels the item if it is off and not being carried",
+	DESC = "Естественный свет медленно заправляет предмет, если он выключен и не переносится",
 }
 
 STRINGS.MODIFIERS.INEFFICIENCY_2 = {
@@ -231,12 +231,12 @@ STRINGS.MODIFIERS.SLOW_PROJECTILE = {
 
 STRINGS.MODIFIERS.COLLISION_PROJECTILE = {
 	PREFIX = "Hurtful",
-	DESC = "While travelling to its target, anything it touches also gets hit."
+	DESC = "Во время путешествия к своей цели все, чего он касается, также поражается."
 }
 
 STRINGS.MODIFIERS.REPAIRER = {
 	PREFIX = "Enchanted",
-	DESC = "Anything you disenchant will also get repaired, while also removing the chance of losing the item."
+	DESC = "Все, что вы распыляете, также будет отремонтировано, при этом исключая возможность потери предмета."
 }
 
 STRINGS.MODIFIERS.INFINITE = {
@@ -246,37 +246,37 @@ STRINGS.MODIFIERS.INFINITE = {
 
 STRINGS.MODIFIERS.FREEZER = {
 	PREFIX = "Chilly",
-	DESC = "Anything inside this container perishes slower."
+	DESC = "Все, что находится внутри этого контейнера, погибает медленнее."
 }
 
 STRINGS.MODIFIERS.LIGHTWEIGHT = {
 	PREFIX = "Lightweight",
-	DESC = "Walking with this item equipped is easier."
+	DESC = "С этим предметом ходить легче."
 }
 
 STRINGS.MODIFIERS.HEAVYWEIGHT = {
 	PREFIX = "Heavyweight",
-	DESC = "Walking with this item equipped is harder."
+	DESC = "Ходить с этим предметом сложнее."
 }
 
 STRINGS.MODIFIERS.RUSHING = {
 	PREFIX = "Rushing",
-	DESC = "Damage dealt will cause the attacker to run faster for a short time."
+	DESC = "Нанесенный урон заставит атакующего на короткое время бежать быстрее."
 }
 
 STRINGS.MODIFIERS.SLOWING = {
 	PREFIX = "Slowing",
-	DESC = "Damage dealt will cause the attacker to run slower for a short time."
+	DESC = "При нанесении урона атакующий на короткое время будет медленнее бежать."
 }
 
 STRINGS.MODIFIERS.ELECTRIC_THORNS = {
 	PREFIX = "Zapping",
-	DESC = "Damage dealt will cause the attacker to get hit by lightning and get teleported away. (Only when an orb is present)"
+	DESC = "При нанесении урона атакующий получит удар молнии и телепортируется прочь. (Только когда присутствует шар)"
 }
 
 STRINGS.MODIFIERS.MINDFIZZLER = {
 	PREFIX = "Moonwalker's",
-	DESC = "Movement controls are inverted."
+	DESC = "Органы управления движением перевернуты."
 }
 
 STRINGS.MODIFIERS.FIREPROOF = {
@@ -286,30 +286,30 @@ STRINGS.MODIFIERS.FIREPROOF = {
 
 STRINGS.MODIFIERS.UNWITHERING = {
 	PREFIX = "Unwithering",
-	DESC = "This backpack's skin does not decay."
+	DESC = "Кожа этого рюкзака не гниет."
 }
 
 STRINGS.MODIFIERS.WITHERED = {
 	PREFIX = "Withered",
-	DESC = "This backpack's skin is instantly withered."
+	DESC = "Кожа этого рюкзака мгновенно засыхает."
 }
 
 STRINGS.MODIFIERS.PRESERVER = {
 	PREFIX = "Reallocting",
-	DESC = "Enchantments are preserved onto other items if any or the disenchanted item. Bad enchantments are upgraded."
+	DESC = "Зачарования сохраняются на других предметах, если таковые имеются, или на рассеянном предмете. Плохие чары улучшаются."
 }
 
 STRINGS.MODIFIERS.MINDASCENDER = {
 	PREFIX = "Tinkerer's",
-	DESC = "While equipped, the wearer can disassemble crafted items for a large portion of this item's durability."
+	DESC = "Когда экипирован, владелец может разбирать созданные предметы, чтобы получить большую часть прочности этого предмета."
 }
 
 STRINGS.MODIFIERS.MINDTRANSCENDER = {
 	PREFIX = "Master Tinkerer's",
-	DESC = "While equipped, the wearer can disassemble crafted items for a small portion of this item's durability. Enchantments are preserved onto other items if any."
+	DESC = "Когда экипирован, владелец может разбирать созданные предметы, чтобы получить небольшую часть прочности этого предмета. Чары сохраняются на других предметах, если таковые имеются."
 }
 
 STRINGS.MODIFIERS.GODLIKE = {
 	PREFIX = "Godlike",
-	DESC = "Has most positive modifiers all in 1.",
+	DESC = "Имеет большинство положительных модификаторов все в 1.",
 }

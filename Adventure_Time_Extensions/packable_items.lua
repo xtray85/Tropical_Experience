@@ -1,5 +1,5 @@
 local PACKABLE = {
-
+    "icemaker", "saltbox", "madscience_lab"
 }
 
 for item in PACKABLE do		
